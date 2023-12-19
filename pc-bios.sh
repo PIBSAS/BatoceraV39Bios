@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################################################
-# Repositorio: BatoceraV38Bios 2023
+# Repositorio: BatoceraV39Bios 2023
 # Por: Raspberry Pi Buenos Aires ("https://sites.google.com/view/raspberrypibuenosaires/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
@@ -19,6 +19,10 @@ echo "You will see cannot remove if the system is new"
 echo
 cd
 mkdir ../bios/dc
+mkdir ../bios/GC
+mkdir ../bios/GC/EUR
+mkdir ../bios/GC/JAP
+mkdir ../bios/GC/USA
 mkdir ../bios/fmtowns
 mkdir ../bios/neocd
 mkdir ../bios/mame
