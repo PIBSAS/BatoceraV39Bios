@@ -263,8 +263,6 @@ rm ../bios/vsmile.zip
 rm ../bios/xegs.zip
 rm ../bios/ym2413.zip
 rm ../bios/ym2608.zip
-rm ../bios/zcdata.dat
-rm ../bios/zcsf.sf2
 rm ../bios/dc/awbios.zip
 rm ../bios/dc/naomi.zip
 rm ../bios/dc/naomi2.zip
@@ -573,8 +571,6 @@ wget -c "${RUTA}vsmile.zip" -P ../bios/
 wget -c "${RUTA}xegs.zip" -P ../bios/
 wget -c "${RUTA}ym2413.zip" -P ../bios/
 wget -c "${RUTA}ym2608.zip" -P ../bios/
-wget -c "${RUTA}zcdata.dat" -P ../bios/
-wget -c "${RUTA}zcsf.sf2" -P ../bios/
 echo
 echo  "Video Information System MD-2500, MAME"
 echo
