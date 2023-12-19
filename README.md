@@ -61,12 +61,6 @@ Type:
 curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi-bios.sh | bash
 ```
 
-# Tutorial: Retroconsolas
-https://sites.google.com/view/raspberrypibuenosaires/retro-consolas
-
-# Tutorial: Crea tu propio Joystick Arcade con Pro-Micro mejor que Zero Delay
-https://sites.google.com/view/raspberrypibuenosaires/joystick-arcade
-
 <h2 align="center"> PC Bios Batocera V39 Butterfly</h2>
 
 ## Easy Install -- Instalación fácil PC:
@@ -86,6 +80,14 @@ curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/pc-
 ```
 ### Enjoy!!! --- A disfrutar!!!
 
+<br>
+# Tutorial: Retroconsolas
+https://sites.google.com/view/raspberrypibuenosaires/retro-consolas
+
+# Tutorial: Crea tu propio Joystick Arcade con Pro-Micro mejor que Zero Delay
+https://sites.google.com/view/raspberrypibuenosaires/joystick-arcade
+
+<br>
 <h1 align="center"> Invite a Coffee</h1>
 <p align="center">
 <a href="https://www.paypal.com/paypalme/RaspberryPiBsAs">
