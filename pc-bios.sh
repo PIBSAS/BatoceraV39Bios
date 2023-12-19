@@ -585,6 +585,11 @@ echo "Naomi"
 wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc/naomi.zip" -P ../bios/dc/
 wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc/naomi2.zip" -P ../bios/dc/
 
+echo "GameCube"
+wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/GC/EUR/IPL.bin" -P ../bios/GC/EUR/
+wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/GC/JAP/IPL.bin" -P ../bios/GC/JAP/
+wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/GC/USA/IPL.bin" -P ../bios/GC/USA/
+
 echo "FM Towns"
 wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_DIC.ROM" -P ../bios/fmtowns/
 wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_DOS.ROM" -P ../bios/fmtowns/
