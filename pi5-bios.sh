@@ -30,6 +30,7 @@ mkdir ../bios/neocd
 mkdir ../bios/mame
 mkdir ../bios/mame/samples
 mkdir ../bios/openmsx
+mkdir ../bios/ps2
 mkdir ../bios/scummvm/extra
 mkdir ../bios/xmil
 mkdir ../bios/wsh57
@@ -59,6 +60,7 @@ rm ../bios/rom1.bin
 rm ../bios/scph39001.MEC
 rm ../bios/scph39001.bin
 rm ../bios/wsh57/scripten.exe
+rm ../bios/ps2/ps2-0230a-20080220.bin
 echo
 rm ../bios/5200.rom
 rm ../bios/a2diskiing.zip
@@ -354,6 +356,7 @@ wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
 wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
+wget -c "${RUTA}ps2/ps2-0230a-20080220.bin" -P ../bios/ps2/
 echo
 
 echo "This ones go more fast but patience"
