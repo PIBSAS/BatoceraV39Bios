@@ -45,7 +45,6 @@ rm ../bios/apple2ee.zip
 rm ../bios/apple2p.zip
 rm ../bios/kick37350.A600
 rm ../bios/vectrex.zip
-rm ../bios/Complex_4627.bin
 rm ../bios/EROM.BIN
 rm ../bios/ROM2.BIN
 rm ../bios/SCPH30004R.MEC
@@ -55,7 +54,6 @@ rm ../bios/dsi_bios9.bin
 rm ../bios/firmware.bin
 rm ../bios/dsi_firmware.bin
 rm ../bios/dsi_nand.bin
-rm ../bios/mcpx_1.0.bin
 rm ../bios/rom1.bin
 rm ../bios/scph39001.MEC
 rm ../bios/scph39001.bin
@@ -341,7 +339,6 @@ echo "Obteniendo Bios---Getting Bios, be patient"
 
 echo "Pi 5, Be a lot patience"
 
-wget -c "${RUTA_ARCH}Complex_4627.bin" -P ../bios/
 wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
 wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
 wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
@@ -351,7 +348,6 @@ wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
 wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
 wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
 wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
-wget -c "${RUTA_ARCH}mcpx_1.0.bin" -P ../bios/
 wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
