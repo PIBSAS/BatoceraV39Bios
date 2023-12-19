@@ -11,9 +11,9 @@ The right Bios for Batocera V39 Butterfly, without unnecessary files.
 
 <h2 align="center"> Raspberry Pi 5 Bios Batocera V39 Butterfly</h2>
 
-# Easy Install -- Instalación fácil para Raspberry Pi:
+## Easy Install -- Instalación fácil para Raspberry Pi:
 
-# Open the Terminal with `Ctrl + Alt + F3` or Login through SSH -- Abrimos una Terminal con `Ctrl + Alt + F3`:
+## Open the Terminal with `Ctrl + Alt + F3` or Login through SSH -- Abrimos una Terminal con `Ctrl + Alt + F3`:
 
 Type:
 
@@ -21,9 +21,9 @@ Type:
 curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi5-bios.sh | bash
 ```
 
-# Or Login through SSH -- O Nos conectamos por SSH:
+### Or Login through SSH -- O Nos conectamos por SSH:
 
-# Login:
+### Login:
 
 User:`root`
 
@@ -36,9 +36,10 @@ curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi5
 ```
 
 <h2 align="center"> Raspberry Pi Bios Batocera V39 Butterfly</h2>
-# Easy Install -- Instalación fácil para Raspberry Pi:
 
-# Open the Terminal with `Ctrl + Alt + F3` or Login through SSH -- Abrimos una Terminal con `Ctrl + Alt + F3`:
+## Easy Install -- Instalación fácil para Raspberry Pi:
+
+## Open the Terminal with `Ctrl + Alt + F3` or Login through SSH -- Abrimos una Terminal con `Ctrl + Alt + F3`:
 
 Type:
 
@@ -46,9 +47,9 @@ Type:
 curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi-bios.sh | bash
 ```
 
-# Or Login through SSH -- O Nos conectamos por SSH:
+### Or Login through SSH -- O Nos conectamos por SSH:
 
-# Login:
+### Login:
 
 User:`root`
 
@@ -67,11 +68,12 @@ https://sites.google.com/view/raspberrypibuenosaires/retro-consolas
 https://sites.google.com/view/raspberrypibuenosaires/joystick-arcade
 
 <h2 align="center"> PC Bios Batocera V39 Butterfly</h2>
-# Easy Install -- Instalación fácil PC:
 
-# Login through SSH or press `F1` and go to Terminal -- Nos conectamos por SSH o Presionas `F1` y vas a la Terminal
+## Easy Install -- Instalación fácil PC:
 
-# Login:
+## Login through SSH or press `F1` and go to Terminal -- Nos conectamos por SSH o Presionas `F1` y vas a la Terminal
+
+### Login:
 
 User:`root`
 
@@ -82,7 +84,7 @@ Type:
 ```
 curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/pc-bios.sh | bash
 ```
-# Enjoy!!! --- A disfrutar!!!
+### Enjoy!!! --- A disfrutar!!!
 
 <h1 align="center"> Invite a Coffee</h1>
 <p align="center">
