@@ -17,6 +17,7 @@ echo
 RUTA=https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/bios/
 RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
 RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
+RUTA_CUA=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/
 echo "Si el sistema es nuevo veras mensajes de que no puede borrar"
 echo "You will see cannot remove if the system is new"
 echo
@@ -32,6 +33,7 @@ mkdir ../bios/mame
 mkdir ../bios/mame/samples
 mkdir ../bios/openmsx
 mkdir ../bios/ps2
+mkdir ../bios/psvita
 mkdir ../bios/scummvm/extra
 mkdir ../bios/xmil
 mkdir ../bios/wsh57
@@ -63,6 +65,8 @@ rm ../bios/scph39001.MEC
 rm ../bios/scph39001.bin
 rm ../bios/wsh57/scripten.exe
 rm ../bios/ps2/ps2-0230a-20080220.bin
+rm ../bios/psvita/PSP2UPDAT.PUP
+rm ../bios/psvita/PSVUPDAT.PUP
 echo
 rm ../bios/5200.rom
 rm ../bios/a2diskiing.zip
@@ -357,6 +361,8 @@ wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
 wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
 wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
+wget -c "${RUTA_CUA}PSP2UPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_CUA}PSVUPDAT.PUP" -P ../bios/psvita/
 echo
 
 echo "This ones go more fast but patience"
