@@ -15,8 +15,8 @@ echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si 
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 echo
 RUTA=https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/bios/
-RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios
-RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios
+RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
+RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
 echo "Si el sistema es nuevo veras mensajes de que no puede borrar"
 echo "You will see cannot remove if the system is new"
 echo
@@ -31,6 +31,7 @@ mkdir ../bios/neocd
 mkdir ../bios/mame
 mkdir ../bios/mame/samples
 mkdir ../bios/openmsx
+mkdir ../bios/ps2
 mkdir ../bios/scummvm/extra
 mkdir ../bios/xmil
 mkdir ../bios/wsh57
@@ -61,6 +62,7 @@ rm ../bios/rom1.bin
 rm ../bios/scph39001.MEC
 rm ../bios/scph39001.bin
 rm ../bios/wsh57/scripten.exe
+rm ../bios/ps2/ps2-0230a-20080220.bin
 echo
 rm ../bios/5200.rom
 rm ../bios/a2diskiing.zip
@@ -338,22 +340,23 @@ echo "Obteniendo Bios---Getting Bios, be patient"
 
 echo "PC, Be a lot patience"
 
-wget -c "${RUTA_ARCH}/Complex_4627.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/EROM.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}/PS3UPDAT.PUP" -P ../bios/
-wget -c "${RUTA_ARCH}/ROM2.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}/SCPH30004R.MEC" -P ../bios/
-wget -c "${RUTA_ARCH}/SCPH30004R.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/dsi_bios7.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/dsi_bios9.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/firmware.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/dsi_firmware.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/dsi_nand.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/mcpx_1.0.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/rom1.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/scph39001.MEC" -P ../bios/
-wget -c "${RUTA_ARCH}/scph39001.bin" -P ../bios/
-wget -c "${RUTA_ARCH}/wsh57/scripten.exe" -P ../bios/wsh57/
+wget -c "${RUTA_ARCH}Complex_4627.bin" -P ../bios/
+wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
+wget -c "${RUTA_ARCH}PS3UPDAT.PUP" -P ../bios/
+wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
+wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
+wget -c "${RUTA_ARCH}SCPH30004R.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_bios7.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
+wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
+wget -c "${RUTA_ARCH}mcpx_1.0.bin" -P ../bios/
+wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
+wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
+wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
+wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
+wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
 echo
 
 echo "This ones go more fast but patience"
@@ -479,7 +482,7 @@ wget -c "${RUTA}maclc3.zip" -P ../bios/
 wget -c "${RUTA}macos3.img" -P ../bios/
 wget -c "${RUTA}macos608.img" -P ../bios/
 wget -c "${RUTA}macos701.img" -P ../bios/
-wget -c "${RUTA_TRI}/macos75.img" -P ../bios/
+wget -c "${RUTA_TRI}macos75.img" -P ../bios/
 wget -c "${RUTA}macplus.zip" -P ../bios/
 wget -c "${RUTA}macse.zip" -P ../bios/
 wget -c "${RUTA}mie.zip" -P ../bios/
