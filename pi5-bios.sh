@@ -314,7 +314,6 @@ rm ../bios/quasi88/N88EXT3.ROM
 rm ../bios/quasi88/N88N.ROM
 rm ../bios/quasi88/N88SUB.ROM
 rm ../bios/quasi88/N88KNJ1.ROM
-rm ../bios/wsh57/
 rm ../bios/xmil/IPLROM.X1
 rm ../bios/xmil/iplrom.x1t
 rm ../bios/scummvm/extra/MT32_PCM.ROM
