@@ -10,7 +10,9 @@ echo "Getting Read and Write system"
 mount -o remount,rw /
 mount -o remount,rw /boot
 echo
-
+RUTA=https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/bios/
+RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
+RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
 echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si se te corto internet"
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 cd
@@ -310,424 +312,424 @@ echo "Obteniendo Bios---Getting Bios, be patient"
 echo
 echo "3DO Interactive Multiplayer: Opera"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/panafz1.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/panafz10.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/goldstar.bin" -P ../bios/
+wget -c "${RUTA}panafz1.bin" -P ../bios/
+wget -c "${RUTA}panafz10.bin" -P ../bios/
+wget -c "${RUTA}goldstar.bin" -P ../bios/
 echo
 echo "Adam: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/adam.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/adam_ddp.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/adam_fdc.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/adam_kb.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/adam_prn.zip" -P ../bios/
+wget -c "${RUTA}adam.zip" -P ../bios/
+wget -c "${RUTA}adam_ddp.zip" -P ../bios/
+wget -c "${RUTA}adam_fdc.zip" -P ../bios/
+wget -c "${RUTA}adam_kb.zip" -P ../bios/
+wget -c "${RUTA}adam_prn.zip" -P ../bios/
 echo
 echo "Adventure Vision: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/advision.zip" -P ../bios/
+wget -c "${RUTA}advision.zip" -P ../bios/
 echo
 echo "Amiga AGA 1200: Amiberry, Lr-Puae, Lr-Puae2021, Lr-Uae4arm"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick39106.A1200" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick40068.A1200" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick40068.A4000" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-300-a1200.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-310-a1200.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-310-a3000.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-310-a4000.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-310.rom" -P ../bios/
+wget -c "${RUTA}kick39106.A1200" -P ../bios/
+wget -c "${RUTA}kick40068.A1200" -P ../bios/
+wget -c "${RUTA}kick40068.A4000" -P ../bios/
+wget -c "${RUTA}amiga-os-300-a1200.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a1200.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a3000.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a4000.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310.rom" -P ../bios/
 echo
 echo "Amiga OCS/ECS 500: Amiberry, Lr-Puae, Lr-Puae2021, Lr-Uae4arm"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick33180.A500" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick37175.A500" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick34005.A500" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick37350.A600" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick40063.A600" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-120.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-130.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-204.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-205.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-310-a600.rom" -P ../bios/
+wget -c "${RUTA}kick33180.A500" -P ../bios/
+wget -c "${RUTA}kick37175.A500" -P ../bios/
+wget -c "${RUTA}kick34005.A500" -P ../bios/
+wget -c "${RUTA}kick37350.A600" -P ../bios/
+wget -c "${RUTA}kick40063.A600" -P ../bios/
+wget -c "${RUTA}amiga-os-120.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-130.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-204.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-205.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a600.rom" -P ../bios/
 echo
 echo "Amiga CD32: Amiberry, Lr-Puae, Lr-Puae2021, Lr-Uae4arm"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick40060.CD32" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick40060.CD32.ext" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-os-310-cd32.rom" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-ext-310-cd32.rom" -P ../bios/
+wget -c "${RUTA}kick40060.CD32" -P ../bios/
+wget -c "${RUTA}kick40060.CD32.ext" -P ../bios/
+wget -c "${RUTA}amiga-os-310-cd32.rom" -P ../bios/
+wget -c "${RUTA}amiga-ext-310-cd32.rom" -P ../bios/
 echo
 echo "Amiga CDTV: Lr-Puae, Lr-Puae2021, Lr-Uae4arm"
 echo 
 echo "Bios kick34005.A500 already downloaded with Amiga 500"
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/kick34005.CDTV" -P ../bios/
+wget -c "${RUTA}kick34005.CDTV" -P ../bios/
 echo "Bios amiga-os-130.rom already downloaded with Amiga 500"
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/amiga-ext-130-cdtv.rom" -P ../bios/
+wget -c "${RUTA}amiga-ext-130-cdtv.rom" -P ../bios/
 echo
 echo "M-1000 Apfm1000: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/apfm1000.zip" -P ../bios/
+wget -c "${RUTA}apfm1000.zip" -P ../bios/
 echo
 echo "Apple II: Gsplus, MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/apple2e.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/apple2ee.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/apple2p.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/a2diskiing.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/a2cffa02.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/votrax.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/d2fdc.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/votrsc01.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/votrsc01a.zip" -P ../bios/
+wget -c "${RUTA}apple2e.zip" -P ../bios/
+wget -c "${RUTA}apple2ee.zip" -P ../bios/
+wget -c "${RUTA}apple2p.zip" -P ../bios/
+wget -c "${RUTA}a2diskiing.zip" -P ../bios/
+wget -c "${RUTA}a2cffa02.zip" -P ../bios/
+wget -c "${RUTA}votrax.zip" -P ../bios/
+wget -c "${RUTA}d2fdc.zip" -P ../bios/
+wget -c "${RUTA}votrsc01.zip" -P ../bios/
+wget -c "${RUTA}votrsc01a.zip" -P ../bios/
 
 echo
 echo "Apple IIGS Gsplus, MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/apple2gs.zip" -P ../bios/
+wget -c "${RUTA}apple2gs.zip" -P ../bios/
 echo
 echo "Archimedes: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/aa310.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/archimedes_keyboard.zip" -P ../bios/
+wget -c "${RUTA}aa310.zip" -P ../bios/
+wget -c "${RUTA}archimedes_keyboard.zip" -P ../bios/
 echo
 echo "Astrocade: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/astrocde.zip" -P ../bios/
+wget -c "${RUTA}astrocde.zip" -P ../bios/
 echo
 echo "Atari 5200: Lr-a5200,, Lr-atari800"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/5200.rom" -P ../bios/
+wget -c "${RUTA}5200.rom" -P ../bios/
 echo
 echo "Atari 800: Lr-atari800"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ATARIOSA.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ATARIOSB.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ATARIXL.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ATARIBAS.ROM" -P ../bios/
+wget -c "${RUTA}ATARIOSA.ROM" -P ../bios/
+wget -c "${RUTA}ATARIOSB.ROM" -P ../bios/
+wget -c "${RUTA}ATARIXL.ROM" -P ../bios/
+wget -c "${RUTA}ATARIBAS.ROM" -P ../bios/
 echo
 echo "Atari ST: Hatari, Lr-Hatari"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos100fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos100uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos100us.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos102de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos102fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos102uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos104de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos104es.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos104fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos104uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos104us.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos106de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos106es.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos106fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos106uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos106us.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos162de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos162fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos162uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos162us.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos205de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos205es.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos205fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos205it.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos205us.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos206de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos206fr.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos206.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos206uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos206us.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos306de.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos306uk.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos400.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos402.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tos404.img" -P ../bios/
+wget -c "${RUTA}tos.img" -P ../bios/
+wget -c "${RUTA}tos100fr.img" -P ../bios/
+wget -c "${RUTA}tos100uk.img" -P ../bios/
+wget -c "${RUTA}tos100us.img" -P ../bios/
+wget -c "${RUTA}tos102de.img" -P ../bios/
+wget -c "${RUTA}tos102fr.img" -P ../bios/
+wget -c "${RUTA}tos102uk.img" -P ../bios/
+wget -c "${RUTA}tos104de.img" -P ../bios/
+wget -c "${RUTA}tos104es.img" -P ../bios/
+wget -c "${RUTA}tos104fr.img" -P ../bios/
+wget -c "${RUTA}tos104uk.img" -P ../bios/
+wget -c "${RUTA}tos104us.img" -P ../bios/
+wget -c "${RUTA}tos106de.img" -P ../bios/
+wget -c "${RUTA}tos106es.img" -P ../bios/
+wget -c "${RUTA}tos106fr.img" -P ../bios/
+wget -c "${RUTA}tos106uk.img" -P ../bios/
+wget -c "${RUTA}tos106us.img" -P ../bios/
+wget -c "${RUTA}tos162de.img" -P ../bios/
+wget -c "${RUTA}tos162fr.img" -P ../bios/
+wget -c "${RUTA}tos162uk.img" -P ../bios/
+wget -c "${RUTA}tos162us.img" -P ../bios/
+wget -c "${RUTA}tos205de.img" -P ../bios/
+wget -c "${RUTA}tos205es.img" -P ../bios/
+wget -c "${RUTA}tos205fr.img" -P ../bios/
+wget -c "${RUTA}tos205it.img" -P ../bios/
+wget -c "${RUTA}tos205us.img" -P ../bios/
+wget -c "${RUTA}tos206de.img" -P ../bios/
+wget -c "${RUTA}tos206fr.img" -P ../bios/
+wget -c "${RUTA}tos206.img" -P ../bios/
+wget -c "${RUTA}tos206uk.img" -P ../bios/
+wget -c "${RUTA}tos206us.img" -P ../bios/
+wget -c "${RUTA}tos306de.img" -P ../bios/
+wget -c "${RUTA}tos306uk.img" -P ../bios/
+wget -c "${RUTA}tos400.img" -P ../bios/
+wget -c "${RUTA}tos402.img" -P ../bios/
+wget -c "${RUTA}tos404.img" -P ../bios/
 echo
 echo "Atom: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/atom.zip" -P ../bios/
+wget -c "${RUTA}atom.zip" -P ../bios/
 echo
 echo "Sega Atomiswave: Flycast, Lr-Flycast"
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc/awbios.zip" -P ../bios/dc/
+wget -c "${RUTA}dc/awbios.zip" -P ../bios/dc/
 echo
 echo "BBC Micro: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbcb.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbc_acorn8271.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/saa5050.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbc_tube_80186.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbcm.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbcmc.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbc_bitstik1.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bbc_bitstik2.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mame/samples/bbc.zip" -P ../bios/mame/samples/
+wget -c "${RUTA}bbcb.zip" -P ../bios/
+wget -c "${RUTA}bbc_acorn8271.zip" -P ../bios/
+wget -c "${RUTA}saa5050.zip" -P ../bios/
+wget -c "${RUTA}bbc_tube_80186.zip" -P ../bios/
+wget -c "${RUTA}bbcm.zip" -P ../bios/
+wget -c "${RUTA}bbcmc.zip" -P ../bios/
+wget -c "${RUTA}bbc_bitstik1.zip" -P ../bios/
+wget -c "${RUTA}bbc_bitstik2.zip" -P ../bios/
+wget -c "${RUTA}mame/samples/bbc.zip" -P ../bios/mame/samples/
 echo
 echo "Camputers Lynx: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/lynx48k.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/lynx96k.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/lynx128k.zip" -P ../bios/
+wget -c "${RUTA}lynx48k.zip" -P ../bios/
+wget -c "${RUTA}lynx96k.zip" -P ../bios/
+wget -c "${RUTA}lynx128k.zip" -P ../bios/
 echo
 echo "Channel-F: Lr-Freechaf"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sl31253.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sl31254.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sl90025.bin" -P ../bios/
+wget -c "${RUTA}sl31253.bin" -P ../bios/
+wget -c "${RUTA}sl31254.bin" -P ../bios/
+wget -c "${RUTA}sl90025.bin" -P ../bios/
 echo
 echo "Color Computer: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/coco.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/coco2.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/coco2b.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/coco3.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/coco3p.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/coco_fdc_v11.zip" -P ../bios/
+wget -c "${RUTA}coco.zip" -P ../bios/
+wget -c "${RUTA}coco2.zip" -P ../bios/
+wget -c "${RUTA}coco2b.zip" -P ../bios/
+wget -c "${RUTA}coco3.zip" -P ../bios/
+wget -c "${RUTA}coco3p.zip" -P ../bios/
+wget -c "${RUTA}coco_fdc_v11.zip" -P ../bios/
 echo
 echo "CreatiVision: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/crvision.zip" -P ../bios/
+wget -c "${RUTA}crvision.zip" -P ../bios/
 echo
 echo "Sega Dreamcast: Flycast, Lr-Flycast"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc_boot.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc_flash.bin" -P ../bios/
+wget -c "${RUTA}dc_boot.bin" -P ../bios/
+wget -c "${RUTA}dc_flash.bin" -P ../bios/
 echo
 echo "Electron: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/electron.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/electron64.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/electron_plus1.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/electron_plus3.zip" -P ../bios/
+wget -c "${RUTA}electron.zip" -P ../bios/
+wget -c "${RUTA}electron64.zip" -P ../bios/
+wget -c "${RUTA}electron_plus1.zip" -P ../bios/
+wget -c "${RUTA}electron_plus3.zip" -P ../bios/
 echo
 echo "Family Computer Disk System: Lr-Fceumm, Mesen, Nestopia"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/disksys.rom" -P ../bios/
+wget -c "${RUTA}disksys.rom" -P ../bios/
 echo
 echo "FM-7: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fm7.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fm77av.zip" -P ../bios/
+wget -c "${RUTA}fm7.zip" -P ../bios/
+wget -c "${RUTA}fm77av.zip" -P ../bios/
 echo
 echo "FM-TOWNS: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_DIC.ROM" -P ../bios/fmtowns/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_DOS.ROM" -P ../bios/fmtowns/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_F20.ROM" -P ../bios/fmtowns/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_FNT.ROM" -P ../bios/fmtowns/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns/FMT_SYS.ROM" -P ../bios/fmtowns/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtmarty.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtowns.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/fmtownsux.zip" -P ../bios/
+wget -c "${RUTA}fmtowns/FMT_DIC.ROM" -P ../bios/fmtowns/
+wget -c "${RUTA}fmtowns/FMT_DOS.ROM" -P ../bios/fmtowns/
+wget -c "${RUTA}fmtowns/FMT_F20.ROM" -P ../bios/fmtowns/
+wget -c "${RUTA}fmtowns/FMT_FNT.ROM" -P ../bios/fmtowns/
+wget -c "${RUTA}fmtowns/FMT_SYS.ROM" -P ../bios/fmtowns/
+wget -c "${RUTA}fmtmarty.zip" -P ../bios/
+wget -c "${RUTA}fmtowns.zip" -P ../bios/
+wget -c "${RUTA}fmtownsux.zip" -P ../bios/
 echo
 echo "Gamate: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gamate.zip" -P ../bios/
+wget -c "${RUTA}gamate.zip" -P ../bios/
 echo
 echo "Game.com: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gamecom.zip" -P ../bios/
+wget -c "${RUTA}gamecom.zip" -P ../bios/
 echo
 echo "Game Pocket Computer: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gamepock.zip" -P ../bios/
+wget -c "${RUTA}gamepock.zip" -P ../bios/
 echo
 echo "Game Boy Advance: Lr-Mgba, Lr-Vba-m"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gba_bios.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gb_bios.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gbc_bios.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sgb_bios.bin" -P ../bios/
+wget -c "${RUTA}gba_bios.bin" -P ../bios/
+wget -c "${RUTA}gb_bios.bin" -P ../bios/
+wget -c "${RUTA}gbc_bios.bin" -P ../bios/
+wget -c "${RUTA}sgb_bios.bin" -P ../bios/
 echo
 echo "Game Master: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gmaster.zip" -P ../bios/
+wget -c "${RUTA}gmaster.zip" -P ../bios/
 echo
 echo "GP32: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/gp32.zip" -P ../bios/
+wget -c "${RUTA}gp32.zip" -P ../bios/
 echo
 echo "Mattel Intellivision: Lr-Freeintv"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/exec.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/grom.bin" -P ../bios/
+wget -c "${RUTA}exec.bin" -P ../bios/
+wget -c "${RUTA}grom.bin" -P ../bios/
 echo
 echo "Laser 310: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/laser310.zip" -P ../bios/
+wget -c "${RUTA}laser310.zip" -P ../bios/
 echo
 echo "Atari Lynx: Lr-Mednafen_lynx, Lr-Handy"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/lynxboot.img" -P ../bios/
+wget -c "${RUTA}lynxboot.img" -P ../bios/
 echo
 echo "Macintosh: MAME. Lr-Minivmac"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MacII.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MacIIx.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mac128k.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mackbd_m0110.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mackbd_m0120.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mac512k.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/macplus.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/macse.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/macclasc.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mac2fdhd.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/nb_48gc.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/maciix.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/maclc3.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mackbd_m0110a.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/nb_image.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/nb_mdc824.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/egret.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/adbmodem.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/macos3.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/macos608.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/macos701.img" -P ../bios/
-wget -c "https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/macos75.img" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mac608.chd" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mac701.chd" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mac755.chd" -P ../bios/
+wget -c "${RUTA}MacII.ROM" -P ../bios/
+wget -c "${RUTA}MacIIx.ROM" -P ../bios/
+wget -c "${RUTA}mac128k.zip" -P ../bios/
+wget -c "${RUTA}mackbd_m0110.zip" -P ../bios/
+wget -c "${RUTA}mackbd_m0120.zip" -P ../bios/
+wget -c "${RUTA}mac512k.zip" -P ../bios/
+wget -c "${RUTA}macplus.zip" -P ../bios/
+wget -c "${RUTA}macse.zip" -P ../bios/
+wget -c "${RUTA}macclasc.zip" -P ../bios/
+wget -c "${RUTA}mac2fdhd.zip" -P ../bios/
+wget -c "${RUTA}nb_48gc.zip" -P ../bios/
+wget -c "${RUTA}maciix.zip" -P ../bios/
+wget -c "${RUTA}maclc3.zip" -P ../bios/
+wget -c "${RUTA}mackbd_m0110a.zip" -P ../bios/
+wget -c "${RUTA}nb_image.zip" -P ../bios/
+wget -c "${RUTA}nb_mdc824.zip" -P ../bios/
+wget -c "${RUTA}egret.zip" -P ../bios/
+wget -c "${RUTA}adbmodem.zip" -P ../bios/
+wget -c "${RUTA}macos3.img" -P ../bios/
+wget -c "${RUTA}macos608.img" -P ../bios/
+wget -c "${RUTA}macos701.img" -P ../bios/
+wget -c "${RUTA_TRI}macos75.img" -P ../bios/
+wget -c "${RUTA}mac608.chd" -P ../bios/
+wget -c "${RUTA}mac701.chd" -P ../bios/
+wget -c "${RUTA}mac755.chd" -P ../bios/
 echo
 echo "Sega Mega Drive: Lr-Genesisplusgx, Lr-Picodrive"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bios_CD_E.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bios_CD_U.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bios_CD_J.bin" -P ../bios/
+wget -c "${RUTA}bios_CD_E.bin" -P ../bios/
+wget -c "${RUTA}bios_CD_U.bin" -P ../bios/
+wget -c "${RUTA}bios_CD_J.bin" -P ../bios/
 echo
 echo "MSX: Lr-Bluemsx, Lr-Fmsx"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MSX.ROM" -P ../bios/
+wget -c "${RUTA}MSX.ROM" -P ../bios/
 echo
 echo "MSX2: Lr-Bluemsx, Lr-Fmsx"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MSX2.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MSX2EXT.ROM" -P ../bios/
+wget -c "${RUTA}MSX2.ROM" -P ../bios/
+wget -c "${RUTA}MSX2EXT.ROM" -P ../bios/
 echo
 echo "MSX2+: Lr-Bluemsx, Lr-Fmsx"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MSX2P.ROM" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/MSX2PEXT.ROM" -P ../bios/
+wget -c "${RUTA}MSX2P.ROM" -P ../bios/
+wget -c "${RUTA}MSX2PEXT.ROM" -P ../bios/
 echo
 echo "Sega Naomi: Flycast, Lr-Flycast"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc/naomi.zip" -P ../bios/dc/
+wget -c "${RUTA}dc/naomi.zip" -P ../bios/dc/
 echo
 echo "Sega Naomi 2: Flycast, Lr-Flycast"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/dc/naomi2.zip" -P ../bios/dc/
+wget -c "${RUTA}dc/naomi2.zip" -P ../bios/dc/
 echo
 echo "Nintendo DS: Drastic, Lr-Melonds"
 echo
-wget -c "https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/firmware.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bios7.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/bios9.bin" -P ../bios/
-wget -c "https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/dsi_bios7.bin" -P ../bios/
-wget -c "https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/dsi_bios9.bin" -P ../bios/
-wget -c "https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/dsi_firmware.bin" -P ../bios/
-wget -c "https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/dsi_nand.bin" -P ../bios/
+wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
+wget -c "${RUTA}bios7.bin" -P ../bios/
+wget -c "${RUTA}bios9.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_bios7.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
 echo
 echo "Neo-Geo: Lr-Fbneo, Lr-MAME, Lr-MAME0139, Lr-MAME078plus"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neogeo.zip" -P ../bios/
+wget -c "${RUTA}neogeo.zip" -P ../bios/
 echo
 echo "Neo-Geo CD: Lr-Neocd"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd_f.rom" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd_sf.rom" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd_t.rom" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd_st.rom" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd_z.rom" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd_sz.rom" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/front-sp1.bin" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/top-sp1.bin" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/neocd.bin" -P ../bios/neocd/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/neocd/uni-bioscd.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_f.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_sf.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_t.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_st.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_z.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_sz.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/front-sp1.bin" -P ../bios/neocd/
+wget -c "${RUTA}neocd/top-sp1.bin" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd.bin" -P ../bios/neocd/
+wget -c "${RUTA}neocd/uni-bioscd.rom" -P ../bios/neocd/
 echo
 echo "Odyssey2: Lr-o2em"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/o2rom.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/c52.bin" -P ../bios/
+wget -c "${RUTA}o2rom.bin" -P ../bios/
+wget -c "${RUTA}c52.bin" -P ../bios/
 echo
 echo
 echo "OpenMSX"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/px-7_pbasic.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/px-7_basic-bios1.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1gt_firmware.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1gt_kanjifont.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_basic-bios2p.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_disk.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_firmware.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_fmbasic.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_kanjibasic.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_kanjifont.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/fs-a1wsx_msx2psub.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/ide250.zip" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/phc-70fd2_basickun.rom" -P ../bios/openmsx/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/openmsx/yrw801.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/px-7_pbasic.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/px-7_basic-bios1.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1gt_firmware.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1gt_kanjifont.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_basic-bios2p.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_disk.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_firmware.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_fmbasic.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_kanjibasic.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_kanjifont.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_msx2psub.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/ide250.zip" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/phc-70fd2_basickun.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/yrw801.rom" -P ../bios/openmsx/
 echo
 echo
 echo "PC-8800: Lr-Quasi88"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88SUB.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88N.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88KNJ1.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88EXT0.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88EXT1.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88EXT2.ROM" -P ../bios/quasi88/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/quasi88/N88EXT3.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88SUB.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88N.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88KNJ1.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT0.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT1.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT2.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT3.ROM" -P ../bios/quasi88/
 echo
 echo "PC-9800: Lr-Np2kai"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/np2kai/BIOS.ROM" -P ../bios/np2kai/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/np2kai/FONT.ROM" -P ../bios/np2kai/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/np2kai/SOUND.ROM" -P ../bios/np2kai/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/np2kai/ITF.ROM" -P ../bios/np2kai/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/np2kai/font.bmp" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/BIOS.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/FONT.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/SOUND.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/ITF.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/font.bmp" -P ../bios/np2kai/
 echo
 echo "PC Engine: Lr-Pce_fast"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/syscard3.pce" -P ../bios/
+wget -c "${RUTA}syscard3.pce" -P ../bios/
 echo
 echo "PC-FX: Lr-Pcfx"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/pcfx.rom" -P ../bios/
+wget -c "${RUTA}pcfx.rom" -P ../bios/
 echo
 echo "PlayStation: Duckstation, Lr-Pcsx_rearmed, Lr-Swanstation"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/psxonpsp660.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scph101.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scph1001.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scph5500.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scph5501.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scph5502.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scph7001.bin" -P ../bios/
+wget -c "${RUTA}psxonpsp660.bin" -P ../bios/
+wget -c "${RUTA}scph101.bin" -P ../bios/
+wget -c "${RUTA}scph1001.bin" -P ../bios/
+wget -c "${RUTA}scph5500.bin" -P ../bios/
+wget -c "${RUTA}scph5501.bin" -P ../bios/
+wget -c "${RUTA}scph5502.bin" -P ../bios/
+wget -c "${RUTA}scph7001.bin" -P ../bios/
 echo
 echo "Satellaview: LR-Snes9x"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/BS-X.bin" -P ../bios/
+wget -c "${RUTA}BS-X.bin" -P ../bios/
 echo
 echo "ScummVM"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scummvm/extra/MT32_PCM.ROM" -P ../bios/scummvm/extra
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/scummvm/extra/MT32_CONTROL.ROM" -P ../bios/scummvm/extra
+wget -c "${RUTA}scummvm/extra/MT32_PCM.ROM" -P ../bios/scummvm/extra
+wget -c "${RUTA}scummvm/extra/MT32_CONTROL.ROM" -P ../bios/scummvm/extra
 echo
 echo "Sega Saturn: Lr-Yabasanshiro"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sega_101.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mpr-17933.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mpr-18811-mx.ic1" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/mpr-19367-mx.ic1" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/saturn_bios.bin" -P ../bios/
+wget -c "${RUTA}sega_101.bin" -P ../bios/
+wget -c "${RUTA}mpr-17933.bin" -P ../bios/
+wget -c "${RUTA}mpr-18811-mx.ic1" -P ../bios/
+wget -c "${RUTA}mpr-19367-mx.ic1" -P ../bios/
+wget -c "${RUTA}saturn_bios.bin" -P ../bios/
 echo
 echo "Super ACan: Lr-Mess, MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/supracan.zip" -P ../bios/
+wget -c "${RUTA}supracan.zip" -P ../bios/
 echo
 echo "Super Cassette Vision: Lr-Emuscv"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/upd7801g.s01" -P ../bios/
+wget -c "${RUTA}upd7801g.s01" -P ../bios/
 echo
 echo "Sega CD: Lr-Genesisplusgx, Lr-Picodrive"
 echo
@@ -739,18 +741,18 @@ echo "bios_CD_J.bin already downloaded with MSU MegaDrive"
 echo
 echo "Super Game Boy: Lr-Mgba"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sgb_boot.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/sgb2_boot.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/SGB1.sfc" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/SGB2.sfc" -P ../bios/
+wget -c "${RUTA}sgb_boot.bin" -P ../bios/
+wget -c "${RUTA}sgb2_boot.bin" -P ../bios/
+wget -c "${RUTA}SGB1.sfc" -P ../bios/
+wget -c "${RUTA}SGB2.sfc" -P ../bios/
 echo
 echo "Socrates: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/socrates.zip" -P ../bios/
+wget -c "${RUTA}socrates.zip" -P ../bios/
 echo
 echo "SuFami Turbo: Lr-Snes9x"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/STBIOS.bin" -P ../bios/
+wget -c "${RUTA}STBIOS.bin" -P ../bios/
 echo
 echo "SuperGrafx: Lr-mednafen_supergrafx"
 echo
@@ -758,68 +760,68 @@ echo "syscard3.pce already downloaded with PC Engine"
 echo
 echo "TI-99: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ti99_4a.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ti99_speech.zip" -P ../bios/
+wget -c "${RUTA}ti99_4a.zip" -P ../bios/
+wget -c "${RUTA}ti99_speech.zip" -P ../bios/
 echo
 echo "Tutor: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/tutor.zip" -P ../bios/
+wget -c "${RUTA}tutor.zip" -P ../bios/
 echo
 echo "Vectrex: Lr-Vecx"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/vectrex.zip" -P ../bios/
+wget -c "${RUTA}vectrex.zip" -P ../bios/
 echo
 echo "Video Game Music Player: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/qsound.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ym2413.zip" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/ym2608.zip" -P ../bios/
+wget -c "${RUTA}qsound.zip" -P ../bios/
+wget -c "${RUTA}ym2413.zip" -P ../bios/
+wget -c "${RUTA}ym2608.zip" -P ../bios/
 echo
 echo "Videopac+ G7400: Lr-O2em"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/g7400.bin" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/jopac.bin" -P ../bios/
+wget -c "${RUTA}g7400.bin" -P ../bios/
+wget -c "${RUTA}jopac.bin" -P ../bios/
 echo
 echo "V.Smile: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/vsmile.zip" -P ../bios/
+wget -c "${RUTA}vsmile.zip" -P ../bios/
 echo
 echo
 echo  "Video Information System MD-2500, MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/vis.zip" -P ../bios/
+wget -c "${RUTA}vis.zip" -P ../bios/
 echo
 echo
 echo "Sharp X1: Lr-X1"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/xmil/IPLROM.X1" -P ../bios/xmil/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/xmil/iplrom.x1t" -P ../bios/xmil/
+wget -c "${RUTA}xmil/IPLROM.X1" -P ../bios/xmil/
+wget -c "${RUTA}xmil/iplrom.x1t" -P ../bios/xmil/
 echo
 echo "Sharp X68000: Lr-Px68k"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/keropi/iplrom.dat" -P ../bios/keropi/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/keropi/cgrom.dat" -P ../bios/keropi/
+wget -c "${RUTA}keropi/iplrom.dat" -P ../bios/keropi/
+wget -c "${RUTA}keropi/cgrom.dat" -P ../bios/keropi/
 echo
 echo "Atari XE Game System: MAME"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/xegs.zip" -P ../bios/
+wget -c "${RUTA}xegs.zip" -P ../bios/
 echo
 echo
 echo "Zelda Classic: ZC210"
 echo
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zcsf.sf2" -P ../bios/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/zcdata.dat" -P ../bios/zc210/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom0.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom1.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom2.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom3.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom4.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom5.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom6.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom7.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom8.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/custom9.sf2" -P ../bios/zc210/sf2/
-wget -c "https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/bios/zc210/sf2/default.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zcsf.sf2" -P ../bios/
+wget -c "${RUTA}zc210/zcdata.dat" -P ../bios/zc210/
+wget -c "${RUTA}zc210/sf2/custom0.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom1.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom2.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom3.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom4.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom5.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom6.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom7.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom8.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/custom9.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zc210/sf2/default.sf2" -P ../bios/zc210/sf2/
 echo
 sleep 1
 echo "Al fin, Copiadas todas las BIOS--Cool we finish"
