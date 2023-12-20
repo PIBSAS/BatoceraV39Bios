@@ -503,13 +503,13 @@ echo
 echo "###### SONY PS2 ######"
 echo
 wget -c "${RUTA}ps2/ps2-0230a-20080220.bin" -P ../bios/ps2/
-wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
-wget -c "${RUTA_ARCH}SCPH30004R.bin" -P ../bios/
-wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
-wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
-wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
+#wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
+#wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
+#wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
+#wget -c "${RUTA_ARCH}SCPH30004R.bin" -P ../bios/
+#wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
+#wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
+#wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
 echo
 echo "###### SONY PS3 ######"
 echo
