@@ -18,6 +18,7 @@ RUTA=https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/bios/
 RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
 RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
 RUTA_CUA=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/
+echo
 echo "Si el sistema es nuevo veras mensajes de que no puede borrar"
 echo "You will see cannot remove if the system is new"
 echo
@@ -343,42 +344,332 @@ echo "System ready for right installation"
 echo "Obteniendo Bios---Getting Bios, be patient"
 
 echo "PC, Be a lot patience"
-
-wget -c "${RUTA_ARCH}Complex_4627.bin" -P ../bios/
 wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}PS3UPDAT.PUP" -P ../bios/
 wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
 wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
 wget -c "${RUTA_ARCH}SCPH30004R.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_bios7.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
-wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
-wget -c "${RUTA_ARCH}mcpx_1.0.bin" -P ../bios/
+
 wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
 wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
 wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
-wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
 wget -c "${RUTA_CUA}PSP2UPDAT.PUP" -P ../bios/psvita/
 wget -c "${RUTA_CUA}PSVUPDAT.PUP" -P ../bios/psvita/
 echo
 
 echo "This ones go more fast but patience"
 
+echo "###### ATARI 800 ######"
+echo
+wget -c "${RUTA}ATARIOSA.ROM" -P ../bios/
+wget -c "${RUTA}ATARIOSB.ROM" -P ../bios/
+wget -c "${RUTA}ATARIXL.ROM" -P ../bios/
+wget -c "${RUTA}ATARIBAS.ROM" -P ../bios/
+
+echo "###### ATARI 5200 ######"
+echo
 wget -c "${RUTA}5200.rom" -P ../bios/
+echo
+echo "###### ATARI ST/STf/STfm ######"
+echo
+wget -c "${RUTA}tos.img" -P ../bios/
+wget -c "${RUTA}tos100fr.img" -P ../bios/
+wget -c "${RUTA}tos100uk.img" -P ../bios/
+wget -c "${RUTA}tos100us.img" -P ../bios/
+wget -c "${RUTA}tos102de.img" -P ../bios/
+wget -c "${RUTA}tos102fr.img" -P ../bios/
+wget -c "${RUTA}tos102uk.img" -P ../bios/
+wget -c "${RUTA}tos104de.img" -P ../bios/
+wget -c "${RUTA}tos104es.img" -P ../bios/
+wget -c "${RUTA}tos104fr.img" -P ../bios/
+wget -c "${RUTA}tos104uk.img" -P ../bios/
+wget -c "${RUTA}tos104us.img" -P ../bios/
+echo
+echo "###### ATARI STe ######"
+echo
+wget -c "${RUTA}tos106de.img" -P ../bios/
+wget -c "${RUTA}tos106es.img" -P ../bios/
+wget -c "${RUTA}tos106fr.img" -P ../bios/
+wget -c "${RUTA}tos106uk.img" -P ../bios/
+wget -c "${RUTA}tos106us.img" -P ../bios/
+wget -c "${RUTA}tos162de.img" -P ../bios/
+wget -c "${RUTA}tos162fr.img" -P ../bios/
+wget -c "${RUTA}tos162uk.img" -P ../bios/
+wget -c "${RUTA}tos162us.img" -P ../bios/
+echo
+echo "###### ATARI Mega STe ######"
+echo
+wget -c "${RUTA}tos205de.img" -P ../bios/
+wget -c "${RUTA}tos205es.img" -P ../bios/
+wget -c "${RUTA}tos205fr.img" -P ../bios/
+wget -c "${RUTA}tos205it.img" -P ../bios/
+wget -c "${RUTA}tos205us.img" -P ../bios/
+wget -c "${RUTA}tos206.img" -P ../bios/
+wget -c "${RUTA}tos206de.img" -P ../bios/
+wget -c "${RUTA}tos206fr.img" -P ../bios/
+wget -c "${RUTA}tos206uk.img" -P ../bios/
+wget -c "${RUTA}tos206us.img" -P ../bios/
+echo
+echo "###### ATARI TT ######"
+echo
+wget -c "${RUTA}tos306de.img" -P ../bios/
+wget -c "${RUTA}tos306uk.img" -P ../bios/
+echo
+echo "###### ATARI Falcon ######"
+echo
+wget -c "${RUTA}tos400.img" -P ../bios/
+wget -c "${RUTA}tos402.img" -P ../bios/
+wget -c "${RUTA}tos404.img" -P ../bios/
+echo
+echo "###### ATARI LYNX ######"
+echo
+wget -c "${RUTA}lynxboot.img" -P ../bios/
+echo
+echo "###### Odyssey 2 ######"
+echo
+wget -c "${RUTA}o2rom.bin" -P ../bios/
+wget -c "${RUTA}c52.bin" -P ../bios/
+echo
+echo "###### Videopac+ G7400 ######"
+echo
+wget -c "${RUTA}g7400.bin" -P ../bios/
+wget -c "${RUTA}jopac.bin" -P ../bios/
+echo
+echo "###### Mattel Intellivision ######"
+echo
+wget -c "${RUTA}exec.bin" -P ../bios/
+wget -c "${RUTA}grom.bin" -P ../bios/
+echo
+echo "###### NEC PC Engine & NEC PC SupergraFX ######"
+echo
+wget -c "${RUTA}syscard3.pce" -P ../bios/
+echo
+echo "###### NEC PC-FX ######"
+echo
+wget -c "${RUTA}pcfx.rom" -P ../bios/
+echo
+echo "###### SNK NEOGEO ######"
+echo
+wget -c "${RUTA}neogeo.zip" -P ../bios/
+echo
+echo "###### SNK NEOGEO CD ######"
+echo
+wget -c "${RUTA}neocd/neocd_f.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_sf.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_t.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_st.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_z.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd_sz.rom" -P ../bios/neocd/
+wget -c "${RUTA}neocd/front-sp1.bin" -P ../bios/neocd/
+wget -c "${RUTA}neocd/top-sp1.bin" -P ../bios/neocd/
+wget -c "${RUTA}neocd/neocd.bin" -P ../bios/neocd/
+wget -c "${RUTA}neocd/uni-bioscd.rom" -P ../bios/neocd/
+echo
+echo "###### SHARP x68000 ######"
+echo
+wget -c "${RUTA}keropi/iplrom.dat" -P ../bios/keropi/
+wget -c "${RUTA}keropi/cgrom.dat" -P ../bios/keropi/
+echo
+echo "###### 3DO ######"
+echo
+wget -c "${RUTA}panafz1.bin" -P ../bios/
+wget -c "${RUTA}panafz10.bin" -P ../bios/
+wget -c "${RUTA}goldstar.bin" -P ../bios/
+echo
+echo "###### SEGA DREAMCAST ######"
+echo
+wget -c "${RUTA}dc_boot.bin" -P ../bios/
+wget -c "${RUTA}dc_flash.bin" -P ../bios/
+echo
+echo "###### SEGA NAOMI & NAOMI 2 ######"
+echo
+wget -c "${RUTA}dc/naomi.zip" -P ../bios/dc/
+wget -c "${RUTA}dc/naomi2.zip" -P ../bios/dc/
+echo
+echo "###### SEGA ATOMISWAVE ######"
+echo
+wget -c "${RUTA}dc/awbios.zip" -P ../bios/dc/
+echo
+echo "###### SEGA GENESIS CD & MSU-MD ######"
+echo
+wget -c "${RUTA}bios_CD_E.bin" -P ../bios/
+wget -c "${RUTA}bios_CD_U.bin" -P ../bios/
+wget -c "${RUTA}bios_CD_J.bin" -P ../bios/
+echo
+echo "###### SEGA SATURN ######"
+echo
+wget -c "${RUTA}sega_101.bin" -P ../bios/
+wget -c "${RUTA}mpr-17933.bin" -P ../bios/
+wget -c "${RUTA}mpr-18811-mx.ic1" -P ../bios/
+wget -c "${RUTA}mpr-19367-mx.ic1" -P ../bios/
+wget -c "${RUTA}saturn_bios.bin" -P ../bios/
+echo
+echo "###### SONY PSX ######"
+echo
+wget -c "${RUTA}psxonpsp660.bin" -P ../bios/
+wget -c "${RUTA}scph101.bin" -P ../bios/
+wget -c "${RUTA}scph1001.bin" -P ../bios/
+wget -c "${RUTA}scph5500.bin" -P ../bios/
+wget -c "${RUTA}scph5501.bin" -P ../bios/
+wget -c "${RUTA}scph5502.bin" -P ../bios/
+wget -c "${RUTA}scph7001.bin" -P ../bios/
+echo
+echo "###### SONY PS2 ######"
+echo
+wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
+echo
+echo "###### SONY PS3 ######"
+echo
+wget -c "${RUTA_ARCH}PS3UPDAT.PUP" -P ../bios/
+echo
+echo "###### NINTENDO FAMILY DISK SYSTEM ######"
+echo
+wget -c "${RUTA}disksys.rom" -P ../bios/
+echo
+echo "###### NINTENDO DS ######"
+echo
+wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
+wget -c "${RUTA}bios7.bin" -P ../bios/
+wget -c "${RUTA}bios9.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_bios7.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
+wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
+echo
+echo "###### NINTENDO GAMEBOY ADVANCE ######"
+echo
+wget -c "${RUTA}gba_bios.bin" -P ../bios/
+wget -c "${RUTA}gb_bios.bin" -P ../bios/
+wget -c "${RUTA}sgb_bios.bin" -P ../bios/
+echo
+echo "###### NINTENDO SATELLAVIEW ######"
+echo
+wget -c "${RUTA}BS-X.bin" -P ../bios/
+echo
+echo "###### NINTENDO SUFAMI ######"
+echo
+wget -c "${RUTA}STBIOS.bin" -P ../bios/
+echo
+echo "###### NINTENDO SUPER GAME BOY ######"
+echo
+wget -c "${RUTA}sgb_boot.bin" -P ../bios/
+wget -c "${RUTA}sgb2_boot.bin" -P ../bios/
+wget -c "${RUTA}SGB1.sfc" -P ../bios/
+wget -c "${RUTA}SGB2.sfc" -P ../bios/
+echo
+echo "###### Microsoft MSX ######"
+echo
+wget -c "${RUTA}MSX.ROM" -P ../bios/
+echo
+echo "###### Microsoft MSX2 ######"
+echo
+wget -c "${RUTA}MSX2.ROM" -P ../bios/
+wget -c "${RUTA}MSX2EXT.ROM" -P ../bios/
+echo
+echo "###### Microsoft MSX2+ ######"
+echo
+wget -c "${RUTA}MSX2P.ROM" -P ../bios/
+wget -c "${RUTA}MSX2PEXT.ROM" -P ../bios/
+echo
+echo "###### Microsoft XBOX ######"
+echo
+wget -c "${RUTA_ARCH}mcpx_1.0.bin" -P ../bios/
+wget -c "${RUTA_ARCH}Complex_4627.bin" -P ../bios/
+echo
+echo "###### COMMODORE AMIGA 500 ######"
+echo
+wget -c "${RUTA}kick33180.A500" -P ../bios/
+wget -c "${RUTA}kick37175.A500" -P ../bios/
+wget -c "${RUTA}kick34005.A500" -P ../bios/
+wget -c "${RUTA}kick37350.A600" -P ../bios/
+wget -c "${RUTA}kick40063.A600" -P ../bios/
+wget -c "${RUTA}amiga-os-120.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-130.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-204.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-205.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a600.rom" -P ../bios/
+echo
+echo "###### COMMODORE AMIGA CDTV ######"
+echo
+echo "kick34005.A500 already downloaded"
+wget -c "${RUTA}kick34005.CDTV" -P ../bios/
+echo "amiga-os-130.rom already downloaded"
+wget -c "${RUTA}amiga-ext-130-cdtv.rom" -P ../bios/
+echo
+echo "###### COMMODORE AMIGA 1200 ######"
+echo
+wget -c "${RUTA}kick39106.A1200" -P ../bios/
+wget -c "${RUTA}kick40068.A1200" -P ../bios/
+wget -c "${RUTA}kick40068.A4000" -P ../bios/
+wget -c "${RUTA}amiga-os-300-a1200.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a1200.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a3000.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310-a4000.rom" -P ../bios/
+wget -c "${RUTA}amiga-os-310.rom" -P ../bios/
+echo
+echo "###### COMMODORE AMIGA CD32 ######"
+echo
+wget -c "${RUTA}kick40060.CD32" -P ../bios/
+wget -c "${RUTA}kick40060.CD32.ext" -P ../bios/
+wget -c "${RUTA}amiga-os-310-cd32.rom" -P ../bios/
+wget -c "${RUTA}amiga-ext-310-cd32.rom" -P ../bios/
+echo
+echo "###### NEC PC-8800 ######"
+echo
+wget -c "${RUTA}quasi88/N88.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88SUB.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88N.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT0.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT1.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT2.ROM" -P ../bios/quasi88/
+wget -c "${RUTA}quasi88/N88EXT3.ROM" -P ../bios/quasi88/
+echo
+wget -c "${RUTA}quasi88/N88KNJ1.ROM" -P ../bios/quasi88/
+echo
+echo "###### NEC PC-9800 ######"
+echo
+wget -c "${RUTA}np2kai/BIOS.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/FONT.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/SOUND.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/ITF.ROM" -P ../bios/np2kai/
+wget -c "${RUTA}np2kai/font.bmp" -P ../bios/np2kai/
+echo
+echo "###### FAIRCHILD CHANNELF ######"
+echo
+wget -c "${RUTA}sl31253.bin" -P ../bios/
+wget -c "${RUTA}sl31254.bin" -P ../bios/
+wget -c "${RUTA}sl90025.bin" -P ../bios/
+echo
+echo "###### SHARP X1 ######"
+echo
+echo
+echo "###### FUJITSU FM-TOWNS ######"
+echo
+echo
+echo "###### GAMEPARK GP32 ######"
+echo
+echo
+echo "###### VTECH LASER 310 ######"
+echo
+echo
+echo "###### FUTURE PINBALL ######"
+echo
+echo
+echo "###### SUPER CASEETTE VISION ######"
+echo
+echo
+echo "###### APPLE II GS ######"
+echo
 wget -c "${RUTA}a2diskiing.zip" -P ../bios/
 wget -c "${RUTA}aa310.zip" -P ../bios/
 wget -c "${RUTA}a2cffa02.zip" -P ../bios/
 wget -c "${RUTA}adbmodem.zip" -P ../bios/
-wget -c "${RUTA}amiga-os-300-a1200.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-310-a600.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-310-a4000.rom" -P ../bios/
+
+
 wget -c "${RUTA}apple2ee.zip" -P ../bios/
 wget -c "${RUTA}apple2p.zip" -P ../bios/
-wget -c "${RUTA}kick37350.A600" -P ../bios/
-wget -c "${RUTA}quasi88/N88KNJ1.ROM" -P ../bios/quasi88/
+
+
 wget -c "${RUTA}vectrex.zip" -P ../bios/
 wget -c "${RUTA}adam_ddp.zip" -P ../bios/
 wget -c "${RUTA}adam_fdc.zip" -P ../bios/
@@ -386,25 +677,18 @@ wget -c "${RUTA}adam_kb.zip" -P ../bios/
 wget -c "${RUTA}adam_prn.zip" -P ../bios/
 wget -c "${RUTA}adam.zip" -P ../bios/
 wget -c "${RUTA}advision.zip" -P ../bios/
-wget -c "${RUTA}amiga-ext-130-cdtv.rom" -P ../bios/
-wget -c "${RUTA}amiga-ext-310-cd32.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-120.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-130.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-204.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-205.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-310-a1200.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-310-a3000.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-310-cd32.rom" -P ../bios/
-wget -c "${RUTA}amiga-os-310.rom" -P ../bios/
+
+
+
+
+
+
+
 wget -c "${RUTA}apfm1000.zip" -P ../bios/
 wget -c "${RUTA}apple2e.zip" -P ../bios/
 wget -c "${RUTA}apple2gs.zip" -P ../bios/
 wget -c "${RUTA}archimedes_keyboard.zip" -P ../bios/
 wget -c "${RUTA}astrocde.zip" -P ../bios/
-wget -c "${RUTA}ATARIBAS.ROM" -P ../bios/
-wget -c "${RUTA}ATARIOSA.ROM" -P ../bios/
-wget -c "${RUTA}ATARIOSB.ROM" -P ../bios/
-wget -c "${RUTA}ATARIXL.ROM" -P ../bios/
 wget -c "${RUTA}atom.zip" -P ../bios/
 wget -c "${RUTA}bbc_acorn8271.zip" -P ../bios/
 wget -c "${RUTA}bbc_bitstik1.zip" -P ../bios/
@@ -413,13 +697,7 @@ wget -c "${RUTA}bbc_tube_80186.zip" -P ../bios/
 wget -c "${RUTA}bbcb.zip" -P ../bios/
 wget -c "${RUTA}bbcm.zip" -P ../bios/
 wget -c "${RUTA}bbcmc.zip" -P ../bios/
-wget -c "${RUTA}bios_CD_E.bin" -P ../bios/
-wget -c "${RUTA}bios_CD_J.bin" -P ../bios/
-wget -c "${RUTA}bios_CD_U.bin" -P ../bios/
-wget -c "${RUTA}bios7.bin" -P ../bios/
-wget -c "${RUTA}bios9.bin" -P ../bios/
-wget -c "${RUTA}BS-X.bin" -P ../bios/
-wget -c "${RUTA}c52.bin" -P ../bios/
+
 wget -c "${RUTA}cdimono1.zip" -P ../bios/
 wget -c "${RUTA}coco.zip" -P ../bios/
 wget -c "${RUTA}coco_fdc_v11.zip" -P ../bios/
@@ -429,48 +707,42 @@ wget -c "${RUTA}coco3.zip" -P ../bios/
 wget -c "${RUTA}coco3p.zip" -P ../bios/
 wget -c "${RUTA}crvision.zip" -P ../bios/
 wget -c "${RUTA}d2fdc.zip" -P ../bios/
-wget -c "${RUTA}dc_boot.bin" -P ../bios/
-wget -c "${RUTA}dc_flash.bin" -P ../bios/
-wget -c "${RUTA}disksys.rom" -P ../bios/
+
 wget -c "${RUTA}egret.zip" -P ../bios/
 wget -c "${RUTA}electron.zip" -P ../bios/
 wget -c "${RUTA}electron_plus1.zip" -P ../bios/
 wget -c "${RUTA}electron_plus3.zip" -P ../bios/
 wget -c "${RUTA}electron64.zip" -P ../bios/
-wget -c "${RUTA}exec.bin" -P ../bios/
+
 wget -c "${RUTA}fm7.zip" -P ../bios/
 wget -c "${RUTA}fm77av.zip" -P ../bios/
 wget -c "${RUTA}fmtmarty.zip" -P ../bios/
 wget -c "${RUTA}fmtowns.zip" -P ../bios/
 wget -c "${RUTA}fmtownsux.zip" -P ../bios/
-wget -c "${RUTA}g7400.bin" -P ../bios/
+
 wget -c "${RUTA}gamate.zip" -P ../bios/
 wget -c "${RUTA}gamecom.zip" -P ../bios/
 wget -c "${RUTA}gamepock.zip" -P ../bios/
-wget -c "${RUTA}gb_bios.bin" -P ../bios/
-wget -c "${RUTA}gba_bios.bin" -P ../bios/
+
 wget -c "${RUTA}gbc_bios.bin" -P ../bios/
 wget -c "${RUTA}gmaster.zip" -P ../bios/
-wget -c "${RUTA}goldstar.bin" -P ../bios/
+
 wget -c "${RUTA}gp32.zip" -P ../bios/
-wget -c "${RUTA}grom.bin" -P ../bios/
+
 wget -c "${RUTA}hikaru.zip" -P ../bios/
-wget -c "${RUTA}jopac.bin" -P ../bios/
-wget -c "${RUTA}kick33180.A500" -P ../bios/
-wget -c "${RUTA}kick34005.A500" -P ../bios/
-wget -c "${RUTA}kick34005.CDTV" -P ../bios/
-wget -c "${RUTA}kick37175.A500" -P ../bios/
-wget -c "${RUTA}kick39106.A1200" -P ../bios/
-wget -c "${RUTA}kick40060.CD32" -P ../bios/
-wget -c "${RUTA}kick40060.CD32.ext" -P ../bios/
-wget -c "${RUTA}kick40063.A600" -P ../bios/
-wget -c "${RUTA}kick40068.A1200" -P ../bios/
-wget -c "${RUTA}kick40068.A4000" -P ../bios/
+
+
+
+
+
+
+
+
 wget -c "${RUTA}laser310.zip" -P ../bios/
 wget -c "${RUTA}lynx48k.zip" -P ../bios/
 wget -c "${RUTA}lynx96k.zip" -P ../bios/
 wget -c "${RUTA}lynx128k.zip" -P ../bios/
-wget -c "${RUTA}lynxboot.img" -P ../bios/
+
 wget -c "${RUTA}mac2fdhd.zip" -P ../bios/
 wget -c "${RUTA}mac128k.zip" -P ../bios/
 wget -c "${RUTA}mac512k.zip" -P ../bios/
@@ -492,84 +764,18 @@ wget -c "${RUTA_TRI}macos75.img" -P ../bios/
 wget -c "${RUTA}macplus.zip" -P ../bios/
 wget -c "${RUTA}macse.zip" -P ../bios/
 wget -c "${RUTA}mie.zip" -P ../bios/
-wget -c "${RUTA}mpr-17933.bin" -P ../bios/
-wget -c "${RUTA}mpr-18811-mx.ic1" -P ../bios/
-wget -c "${RUTA}mpr-19367-mx.ic1" -P ../bios/
-wget -c "${RUTA}MSX.ROM" -P ../bios/
-wget -c "${RUTA}MSX2.ROM" -P ../bios/
-wget -c "${RUTA}MSX2EXT.ROM" -P ../bios/
-wget -c "${RUTA}MSX2P.ROM" -P ../bios/
-wget -c "${RUTA}MSX2PEXT.ROM" -P ../bios/
 wget -c "${RUTA}nb_48gc.zip" -P ../bios/
 wget -c "${RUTA}nb_image.zip" -P ../bios/
 wget -c "${RUTA}nb_mdc824.zip" -P ../bios/
-wget -c "${RUTA}neogeo.zip" -P ../bios/
-wget -c "${RUTA}o2rom.bin" -P ../bios/
-wget -c "${RUTA}panafz1.bin" -P ../bios/
-wget -c "${RUTA}panafz10.bin" -P ../bios/
-wget -c "${RUTA}pcfx.rom" -P ../bios/
-wget -c "${RUTA}psxonpsp660.bin" -P ../bios/
 wget -c "${RUTA}qsound.zip" -P ../bios/
 wget -c "${RUTA}ROM1" -P ../bios/
 wget -c "${RUTA}saa5050.zip" -P ../bios/
-wget -c "${RUTA}saturn_bios.bin" -P ../bios/
-wget -c "${RUTA}scph101.bin" -P ../bios/
-wget -c "${RUTA}scph1001.bin" -P ../bios/
-wget -c "${RUTA}scph5500.bin" -P ../bios/
-wget -c "${RUTA}scph5501.bin" -P ../bios/
-wget -c "${RUTA}scph5502.bin" -P ../bios/
-wget -c "${RUTA}scph7001.bin" -P ../bios/
-wget -c "${RUTA}sega_101.bin" -P ../bios/
-wget -c "${RUTA}sgb_bios.bin" -P ../bios/
-wget -c "${RUTA}sgb_boot.bin" -P ../bios/
-wget -c "${RUTA}SGB1.sfc" -P ../bios/
-wget -c "${RUTA}SGB2.sfc" -P ../bios/
-wget -c "${RUTA}sgb2_boot.bin" -P ../bios/
-wget -c "${RUTA}sl31253.bin" -P ../bios/
-wget -c "${RUTA}sl31254.bin" -P ../bios/
-wget -c "${RUTA}sl90025.bin" -P ../bios/
 wget -c "${RUTA}socrates.zip" -P ../bios/
-wget -c "${RUTA}STBIOS.bin" -P ../bios/
+
 wget -c "${RUTA}supracan.zip" -P ../bios/
-wget -c "${RUTA}syscard3.pce" -P ../bios/
+
 wget -c "${RUTA}ti99_4a.zip" -P ../bios/
 wget -c "${RUTA}ti99_speech.zip" -P ../bios/
-wget -c "${RUTA}tos.img" -P ../bios/
-wget -c "${RUTA}tos100fr.img" -P ../bios/
-wget -c "${RUTA}tos100uk.img" -P ../bios/
-wget -c "${RUTA}tos100us.img" -P ../bios/
-wget -c "${RUTA}tos102de.img" -P ../bios/
-wget -c "${RUTA}tos102fr.img" -P ../bios/
-wget -c "${RUTA}tos102uk.img" -P ../bios/
-wget -c "${RUTA}tos104de.img" -P ../bios/
-wget -c "${RUTA}tos104es.img" -P ../bios/
-wget -c "${RUTA}tos104fr.img" -P ../bios/
-wget -c "${RUTA}tos104uk.img" -P ../bios/
-wget -c "${RUTA}tos104us.img" -P ../bios/
-wget -c "${RUTA}tos106de.img" -P ../bios/
-wget -c "${RUTA}tos106es.img" -P ../bios/
-wget -c "${RUTA}tos106fr.img" -P ../bios/
-wget -c "${RUTA}tos106uk.img" -P ../bios/
-wget -c "${RUTA}tos106us.img" -P ../bios/
-wget -c "${RUTA}tos162de.img" -P ../bios/
-wget -c "${RUTA}tos162fr.img" -P ../bios/
-wget -c "${RUTA}tos162uk.img" -P ../bios/
-wget -c "${RUTA}tos162us.img" -P ../bios/
-wget -c "${RUTA}tos205de.img" -P ../bios/
-wget -c "${RUTA}tos205es.img" -P ../bios/
-wget -c "${RUTA}tos205fr.img" -P ../bios/
-wget -c "${RUTA}tos205it.img" -P ../bios/
-wget -c "${RUTA}tos205us.img" -P ../bios/
-wget -c "${RUTA}tos206.img" -P ../bios/
-wget -c "${RUTA}tos206de.img" -P ../bios/
-wget -c "${RUTA}tos206fr.img" -P ../bios/
-wget -c "${RUTA}tos206uk.img" -P ../bios/
-wget -c "${RUTA}tos206us.img" -P ../bios/
-wget -c "${RUTA}tos306de.img" -P ../bios/
-wget -c "${RUTA}tos306uk.img" -P ../bios/
-wget -c "${RUTA}tos400.img" -P ../bios/
-wget -c "${RUTA}tos402.img" -P ../bios/
-wget -c "${RUTA}tos404.img" -P ../bios/
 wget -c "${RUTA}tutor.zip" -P ../bios/
 wget -c "${RUTA}upd7801g.s01" -P ../bios/
 wget -c "${RUTA}votrax.zip" -P ../bios/
@@ -585,13 +791,6 @@ echo
 wget -c "${RUTA}vis.zip" -P ../bios/
 echo
 
-echo "Atomiswave"
-wget -c "${RUTA}dc/awbios.zip" -P ../bios/dc/
-
-echo "Naomi"
-wget -c "${RUTA}dc/naomi.zip" -P ../bios/dc/
-wget -c "${RUTA}dc/naomi2.zip" -P ../bios/dc/
-
 echo "GameCube"
 wget -c "${RUTA}GC/EUR/IPL.bin" -P ../bios/GC/EUR/
 wget -c "${RUTA}GC/JAP/IPL.bin" -P ../bios/GC/JAP/
@@ -604,31 +803,10 @@ wget -c "${RUTA}fmtowns/FMT_F20.ROM" -P ../bios/fmtowns/
 wget -c "${RUTA}fmtowns/FMT_FNT.ROM" -P ../bios/fmtowns/
 wget -c "${RUTA}fmtowns/FMT_SYS.ROM" -P ../bios/fmtowns/
 
-echo "Keropi"
-wget -c "${RUTA}keropi/cgrom.dat" -P ../bios/keropi/
-wget -c "${RUTA}keropi/iplrom.dat" -P ../bios/keropi/
 
 echo "BBC"
 wget -c "${RUTA}mame/samples/bbc.zip" -P ../bios/mame/samples/
 
-echo "Neo Geo CD"
-wget -c "${RUTA}neocd/front-sp1.bin" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd.bin" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd_f.rom" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd_sf.rom" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd_st.rom" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd_sz.rom" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd_t.rom" -P ../bios/neocd/
-wget -c "${RUTA}neocd/neocd_z.rom" -P ../bios/neocd/
-wget -c "${RUTA}neocd/top-sp1.bin" -P ../bios/neocd/
-wget -c "${RUTA}neocd/uni-bioscd.rom" -P ../bios/neocd/
-
-echo "np2kai"
-wget -c "${RUTA}np2kai/BIOS.ROM" -P ../bios/np2kai/
-wget -c "${RUTA}np2kai/font.bmp" -P ../bios/np2kai/
-wget -c "${RUTA}np2kai/FONT.ROM" -P ../bios/np2kai/
-wget -c "${RUTA}np2kai/ITF.ROM" -P ../bios/np2kai/
-wget -c "${RUTA}np2kai/SOUND.ROM" -P ../bios/np2kai/
 echo
 echo "OpenMSX"
 echo
@@ -647,14 +825,7 @@ wget -c "${RUTA}openmsx/ide250.zip" -P ../bios/openmsx/
 wget -c "${RUTA}openmsx/phc-70fd2_basickun.rom" -P ../bios/openmsx/
 wget -c "${RUTA}openmsx/yrw801.rom" -P ../bios/openmsx/
 echo
-echo "quasi88"
-wget -c "${RUTA}quasi88/N88EXT0.ROM" -P ../bios/quasi88/
-wget -c "${RUTA}quasi88/N88EXT1.ROM" -P ../bios/quasi88/
-wget -c "${RUTA}quasi88/N88EXT2.ROM" -P ../bios/quasi88/
-wget -c "${RUTA}quasi88/N88EXT3.ROM" -P ../bios/quasi88/
-wget -c "${RUTA}quasi88/N88N.ROM" -P ../bios/quasi88/
-wget -c "${RUTA}quasi88/N88.ROM" -P ../bios/quasi88/
-wget -c "${RUTA}quasi88/N88SUB.ROM" -P ../bios/quasi88/
+
 
 echo "xmil"
 wget -c "${RUTA}xmil/IPLROM.X1" -P ../bios/xmil/
