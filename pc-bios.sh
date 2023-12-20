@@ -502,7 +502,7 @@ wget -c "${RUTA}scph7001.bin" -P ../bios/
 echo
 echo "###### SONY PS2 ######"
 echo
-wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
+wget -c "${RUTA}ps2/ps2-0230a-20080220.bin" -P ../bios/ps2/
 wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
 wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
 wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
