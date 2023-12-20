@@ -298,6 +298,9 @@ rm ../bios/np2kai/font.bmp
 rm ../bios/np2kai/FONT.ROM
 rm ../bios/np2kai/ITF.ROM
 rm ../bios/np2kai/SOUND.ROM
+rm ../bios/openmsx/nms8250_disk.rom
+rm ../bios/openmsx/nms8250_basic-bios2.rom
+rm ../bios/openmsx/nms8250_msx2sub.rom
 rm ../bios/openmsx/px-7_pbasic.rom
 rm ../bios/openmsx/px-7_basic-bios1.rom
 rm ../bios/openmsx/fs-a1gt_firmware.rom
@@ -342,22 +345,6 @@ echo "Sistema listo para su correcta instalacion"
 echo "System ready for right installation"
 
 echo "Obteniendo Bios---Getting Bios, be patient"
-
-echo "PC, Be a lot patience"
-wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
-wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
-wget -c "${RUTA_ARCH}SCPH30004R.bin" -P ../bios/
-
-wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
-wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
-wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
-wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
-wget -c "${RUTA_CUA}PSP2UPDAT.PUP" -P ../bios/psvita/
-wget -c "${RUTA_CUA}PSVUPDAT.PUP" -P ../bios/psvita/
-echo
-
-echo "This ones go more fast but patience"
 
 echo "###### ATARI 800 ######"
 echo
@@ -481,10 +468,9 @@ echo
 wget -c "${RUTA}dc_boot.bin" -P ../bios/
 wget -c "${RUTA}dc_flash.bin" -P ../bios/
 echo
-echo "###### SEGA NAOMI & NAOMI 2 ######"
+echo "###### SEGA NAOMI ######"
 echo
 wget -c "${RUTA}dc/naomi.zip" -P ../bios/dc/
-wget -c "${RUTA}dc/naomi2.zip" -P ../bios/dc/
 echo
 echo "###### SEGA ATOMISWAVE ######"
 echo
@@ -517,6 +503,13 @@ echo
 echo "###### SONY PS2 ######"
 echo
 wget -c "${RUTA}ps2-0230a-20080220.bin" -P ../bios/ps2/
+wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
+wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
+wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
+wget -c "${RUTA_ARCH}SCPH30004R.bin" -P ../bios/
+wget -c "${RUTA_ARCH}rom1.bin" -P ../bios/
+wget -c "${RUTA_ARCH}scph39001.MEC" -P ../bios/
+wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
 echo
 echo "###### SONY PS3 ######"
 echo
@@ -540,6 +533,7 @@ echo "###### NINTENDO GAMEBOY ADVANCE ######"
 echo
 wget -c "${RUTA}gba_bios.bin" -P ../bios/
 wget -c "${RUTA}gb_bios.bin" -P ../bios/
+wget -c "${RUTA}gbc_bios.bin" -P ../bios/
 wget -c "${RUTA}sgb_bios.bin" -P ../bios/
 echo
 echo "###### NINTENDO SATELLAVIEW ######"
@@ -642,205 +636,42 @@ wget -c "${RUTA}sl90025.bin" -P ../bios/
 echo
 echo "###### SHARP X1 ######"
 echo
+wget -c "${RUTA}xmil/IPLROM.X1" -P ../bios/xmil/
+wget -c "${RUTA}xmil/iplrom.x1t" -P ../bios/xmil/
 echo
 echo "###### FUJITSU FM-TOWNS ######"
 echo
-echo
-echo "###### GAMEPARK GP32 ######"
-echo
-echo
-echo "###### VTECH LASER 310 ######"
-echo
-echo
-echo "###### FUTURE PINBALL ######"
-echo
-echo
-echo "###### SUPER CASEETTE VISION ######"
-echo
-echo
-echo "###### APPLE II GS ######"
-echo
-wget -c "${RUTA}a2diskiing.zip" -P ../bios/
-wget -c "${RUTA}aa310.zip" -P ../bios/
-wget -c "${RUTA}a2cffa02.zip" -P ../bios/
-wget -c "${RUTA}adbmodem.zip" -P ../bios/
-
-
-wget -c "${RUTA}apple2ee.zip" -P ../bios/
-wget -c "${RUTA}apple2p.zip" -P ../bios/
-
-
-wget -c "${RUTA}vectrex.zip" -P ../bios/
-wget -c "${RUTA}adam_ddp.zip" -P ../bios/
-wget -c "${RUTA}adam_fdc.zip" -P ../bios/
-wget -c "${RUTA}adam_kb.zip" -P ../bios/
-wget -c "${RUTA}adam_prn.zip" -P ../bios/
-wget -c "${RUTA}adam.zip" -P ../bios/
-wget -c "${RUTA}advision.zip" -P ../bios/
-
-
-
-
-
-
-
-wget -c "${RUTA}apfm1000.zip" -P ../bios/
-wget -c "${RUTA}apple2e.zip" -P ../bios/
-wget -c "${RUTA}apple2gs.zip" -P ../bios/
-wget -c "${RUTA}archimedes_keyboard.zip" -P ../bios/
-wget -c "${RUTA}astrocde.zip" -P ../bios/
-wget -c "${RUTA}atom.zip" -P ../bios/
-wget -c "${RUTA}bbc_acorn8271.zip" -P ../bios/
-wget -c "${RUTA}bbc_bitstik1.zip" -P ../bios/
-wget -c "${RUTA}bbc_bitstik2.zip" -P ../bios/
-wget -c "${RUTA}bbc_tube_80186.zip" -P ../bios/
-wget -c "${RUTA}bbcb.zip" -P ../bios/
-wget -c "${RUTA}bbcm.zip" -P ../bios/
-wget -c "${RUTA}bbcmc.zip" -P ../bios/
-
-wget -c "${RUTA}cdimono1.zip" -P ../bios/
-wget -c "${RUTA}coco.zip" -P ../bios/
-wget -c "${RUTA}coco_fdc_v11.zip" -P ../bios/
-wget -c "${RUTA}coco2.zip" -P ../bios/
-wget -c "${RUTA}coco2b.zip" -P ../bios/
-wget -c "${RUTA}coco3.zip" -P ../bios/
-wget -c "${RUTA}coco3p.zip" -P ../bios/
-wget -c "${RUTA}crvision.zip" -P ../bios/
-wget -c "${RUTA}d2fdc.zip" -P ../bios/
-
-wget -c "${RUTA}egret.zip" -P ../bios/
-wget -c "${RUTA}electron.zip" -P ../bios/
-wget -c "${RUTA}electron_plus1.zip" -P ../bios/
-wget -c "${RUTA}electron_plus3.zip" -P ../bios/
-wget -c "${RUTA}electron64.zip" -P ../bios/
-
-wget -c "${RUTA}fm7.zip" -P ../bios/
-wget -c "${RUTA}fm77av.zip" -P ../bios/
-wget -c "${RUTA}fmtmarty.zip" -P ../bios/
-wget -c "${RUTA}fmtowns.zip" -P ../bios/
-wget -c "${RUTA}fmtownsux.zip" -P ../bios/
-
-wget -c "${RUTA}gamate.zip" -P ../bios/
-wget -c "${RUTA}gamecom.zip" -P ../bios/
-wget -c "${RUTA}gamepock.zip" -P ../bios/
-
-wget -c "${RUTA}gbc_bios.bin" -P ../bios/
-wget -c "${RUTA}gmaster.zip" -P ../bios/
-
-wget -c "${RUTA}gp32.zip" -P ../bios/
-
-wget -c "${RUTA}hikaru.zip" -P ../bios/
-
-
-
-
-
-
-
-
-wget -c "${RUTA}laser310.zip" -P ../bios/
-wget -c "${RUTA}lynx48k.zip" -P ../bios/
-wget -c "${RUTA}lynx96k.zip" -P ../bios/
-wget -c "${RUTA}lynx128k.zip" -P ../bios/
-
-wget -c "${RUTA}mac2fdhd.zip" -P ../bios/
-wget -c "${RUTA}mac128k.zip" -P ../bios/
-wget -c "${RUTA}mac512k.zip" -P ../bios/
-wget -c "${RUTA}mac608.chd" -P ../bios/
-wget -c "${RUTA}mac701.chd" -P ../bios/
-wget -c "${RUTA}mac755.chd" -P ../bios/
-wget -c "${RUTA}macclasc.zip" -P ../bios/
-wget -c "${RUTA}MacII.ROM" -P ../bios/
-wget -c "${RUTA}MacIIx.ROM" -P ../bios/
-wget -c "${RUTA}maciix.zip" -P ../bios/
-wget -c "${RUTA}mackbd_m0110.zip" -P ../bios/
-wget -c "${RUTA}mackbd_m0110a.zip" -P ../bios/
-wget -c "${RUTA}mackbd_m0120.zip" -P ../bios/
-wget -c "${RUTA}maclc3.zip" -P ../bios/
-wget -c "${RUTA}macos3.img" -P ../bios/
-wget -c "${RUTA}macos608.img" -P ../bios/
-wget -c "${RUTA}macos701.img" -P ../bios/
-wget -c "${RUTA_TRI}macos75.img" -P ../bios/
-wget -c "${RUTA}macplus.zip" -P ../bios/
-wget -c "${RUTA}macse.zip" -P ../bios/
-wget -c "${RUTA}mie.zip" -P ../bios/
-wget -c "${RUTA}nb_48gc.zip" -P ../bios/
-wget -c "${RUTA}nb_image.zip" -P ../bios/
-wget -c "${RUTA}nb_mdc824.zip" -P ../bios/
-wget -c "${RUTA}qsound.zip" -P ../bios/
-wget -c "${RUTA}ROM1" -P ../bios/
-wget -c "${RUTA}saa5050.zip" -P ../bios/
-wget -c "${RUTA}socrates.zip" -P ../bios/
-
-wget -c "${RUTA}supracan.zip" -P ../bios/
-
-wget -c "${RUTA}ti99_4a.zip" -P ../bios/
-wget -c "${RUTA}ti99_speech.zip" -P ../bios/
-wget -c "${RUTA}tutor.zip" -P ../bios/
-wget -c "${RUTA}upd7801g.s01" -P ../bios/
-wget -c "${RUTA}votrax.zip" -P ../bios/
-wget -c "${RUTA}votrsc01.zip" -P ../bios/
-wget -c "${RUTA}votrsc01a.zip" -P ../bios/
-wget -c "${RUTA}vsmile.zip" -P ../bios/
-wget -c "${RUTA}xegs.zip" -P ../bios/
-wget -c "${RUTA}ym2413.zip" -P ../bios/
-wget -c "${RUTA}ym2608.zip" -P ../bios/
-echo
-echo  "Video Information System MD-2500, MAME"
-echo
-wget -c "${RUTA}vis.zip" -P ../bios/
-echo
-
-echo "GameCube"
-wget -c "${RUTA}GC/EUR/IPL.bin" -P ../bios/GC/EUR/
-wget -c "${RUTA}GC/JAP/IPL.bin" -P ../bios/GC/JAP/
-wget -c "${RUTA}GC/USA/IPL.bin" -P ../bios/GC/USA/
-
-echo "FM Towns"
 wget -c "${RUTA}fmtowns/FMT_DIC.ROM" -P ../bios/fmtowns/
 wget -c "${RUTA}fmtowns/FMT_DOS.ROM" -P ../bios/fmtowns/
 wget -c "${RUTA}fmtowns/FMT_F20.ROM" -P ../bios/fmtowns/
 wget -c "${RUTA}fmtowns/FMT_FNT.ROM" -P ../bios/fmtowns/
 wget -c "${RUTA}fmtowns/FMT_SYS.ROM" -P ../bios/fmtowns/
-
-
-echo "BBC"
-wget -c "${RUTA}mame/samples/bbc.zip" -P ../bios/mame/samples/
-
+wget -c "${RUTA}fmtmarty.zip" -P ../bios/
+wget -c "${RUTA}fmtowns.zip" -P ../bios/
+wget -c "${RUTA}fmtownsux.zip" -P ../bios/
 echo
-echo "OpenMSX"
+echo "###### GAMEPARK GP32 ######"
 echo
-wget -c "${RUTA}openmsx/px-7_pbasic.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/px-7_basic-bios1.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1gt_firmware.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1gt_kanjifont.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_basic-bios2p.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_disk.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_firmware.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_fmbasic.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_kanjibasic.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_kanjifont.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/fs-a1wsx_msx2psub.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/ide250.zip" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/phc-70fd2_basickun.rom" -P ../bios/openmsx/
-wget -c "${RUTA}openmsx/yrw801.rom" -P ../bios/openmsx/
+wget -c "${RUTA}gp32.zip" -P ../bios/
 echo
-
-
-echo "xmil"
-wget -c "${RUTA}xmil/IPLROM.X1" -P ../bios/xmil/
-wget -c "${RUTA}xmil/iplrom.x1t" -P ../bios/xmil/
+echo "###### VTECH LASER 310 ######"
 echo
-echo "ScummVM"
+wget -c "${RUTA}laser310.zip" -P ../bios/
 echo
-wget -c "${RUTA}scummvm/extra/MT32_PCM.ROM" -P ../bios/scummvm/extra
-wget -c "${RUTA}scummvm/extra/MT32_CONTROL.ROM" -P ../bios/scummvm/extra
+echo "###### FUTURE PINBALL ######"
 echo
+wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
 echo
+echo "###### SUPER CASEETTE VISION ######"
 echo
-echo "Zelda Classic: ZC210"
+wget -c "${RUTA}upd7801g.s01" -P ../bios/
 echo
-wget -c "${RUTA}zcsf.sf2" -P ../bios/
+echo "###### APPLE II GS ######"
+echo
+wget -c "${RUTA}ROM1" -P ../bios/
+echo
+echo "###### ZELDA CLASSIC ######"
+echo
 wget -c "${RUTA}zc210/zcdata.dat" -P ../bios/zc210/
 wget -c "${RUTA}zc210/sf2/custom0.sf2" -P ../bios/zc210/sf2/
 wget -c "${RUTA}zc210/sf2/custom1.sf2" -P ../bios/zc210/sf2/
@@ -853,12 +684,247 @@ wget -c "${RUTA}zc210/sf2/custom7.sf2" -P ../bios/zc210/sf2/
 wget -c "${RUTA}zc210/sf2/custom8.sf2" -P ../bios/zc210/sf2/
 wget -c "${RUTA}zc210/sf2/custom9.sf2" -P ../bios/zc210/sf2/
 wget -c "${RUTA}zc210/sf2/default.sf2" -P ../bios/zc210/sf2/
+wget -c "${RUTA}zcsf.sf2" -P ../bios/
+echo
+echo "###### APPLE MACINTOSH ######"
+echo
+wget -c "${RUTA}MacII.ROM" -P ../bios/
+wget -c "${RUTA}MacIIx.ROM" -P ../bios/
+wget -c "${RUTA}mac128k.zip" -P ../bios/
+wget -c "${RUTA}mackbd_m0110.zip" -P ../bios/
+wget -c "${RUTA}mackbd_m0120.zip" -P ../bios/
+wget -c "${RUTA}mac512k.zip" -P ../bios/
+wget -c "${RUTA}macplus.zip" -P ../bios/
+wget -c "${RUTA}macse.zip" -P ../bios/
+wget -c "${RUTA}macclasc.zip" -P ../bios/
+wget -c "${RUTA}mac2fdhd.zip" -P ../bios/
+wget -c "${RUTA}nb_mdc824.zip" -P ../bios/
+wget -c "${RUTA}maciix.zip" -P ../bios/
+wget -c "${RUTA}maclc3.zip" -P ../bios/
+wget -c "${RUTA}mackbd_m0110a.zip" -P ../bios/
+wget -c "${RUTA}nb_image.zip" -P ../bios/
+wget -c "${RUTA}egret.zip" -P ../bios/
+wget -c "${RUTA}adbmodem.zip" -P ../bios/
+wget -c "${RUTA}macos3.img" -P ../bios/
+wget -c "${RUTA}macos608.img" -P ../bios/
+wget -c "${RUTA}macos701.img" -P ../bios/
+wget -c "${RUTA_TRI}macos75.img" -P ../bios/
+wget -c "${RUTA}mac608.chd" -P ../bios/
+wget -c "${RUTA}mac701.chd" -P ../bios/
+wget -c "${RUTA}mac755.chd" -P ../bios/
+echo
+echo "###### TANDY COLOR COMPUTER ######"
+echo
+wget -c "${RUTA}coco.zip" -P ../bios/
+wget -c "${RUTA}coco2.zip" -P ../bios/
+wget -c "${RUTA}coco2b.zip" -P ../bios/
+wget -c "${RUTA}coco3.zip" -P ../bios/
+wget -c "${RUTA}coco3p.zip" -P ../bios/
+wget -c "${RUTA}coco_fdc_v11.zip" -P ../bios/
+echo
+echo "###### TOMY TUTOR ######"
+echo
+wget -c "${RUTA}tutor.zip" -P ../bios/
+echo
+echo "###### TEXAS INSTRUMENTS TI-99 ######"
+echo
+wget -c "${RUTA}ti99_4a.zip" -P ../bios/
+wget -c "${RUTA}ti99_speech.zip" -P ../bios/
+echo
+echo "###### BALLY ASTROCADE ######"
+echo
+wget -c "${RUTA}astrocde.zip" -P ../bios/
+echo
+echo "###### Hartung Game Master ######"
+echo
+wget -c "${RUTA}gmaster.zip" -P ../bios/
+echo
+echo "###### COLECO ADAM ######"
+echo
+wget -c "${RUTA}adam.zip" -P ../bios/
+wget -c "${RUTA}adam_ddp.zip" -P ../bios/
+wget -c "${RUTA}adam_fdc.zip" -P ../bios/
+wget -c "${RUTA}adam_kb.zip" -P ../bios/
+wget -c "${RUTA}adam_prn.zip" -P ../bios/
+echo
+echo "###### BBC MICRO ######"
+echo
+wget -c "${RUTA}bbcb.zip" -P ../bios/
+wget -c "${RUTA}bbc_acorn8271.zip" -P ../bios/
+wget -c "${RUTA}saa5050.zip" -P ../bios/
+wget -c "${RUTA}bbc_tube_80186.zip" -P ../bios/
+wget -c "${RUTA}bbcm.zip" -P ../bios/
+wget -c "${RUTA}bbcmc.zip" -P ../bios/
+wget -c "${RUTA}bbc_bitstik1.zip" -P ../bios/
+wget -c "${RUTA}bbc_bitstik2.zip" -P ../bios/
+wget -c "${RUTA}mame/samples/bbc.zip" -P ../bios/mame/samples/
+echo
+echo "###### APF M-1000 ######"
+echo
+wget -c "${RUTA}apfm1000.zip" -P ../bios/
+echo
+echo "###### FUJITSU FM-7 ######"
+echo
+wget -c "${RUTA}fm7.zip" -P ../bios/
+wget -c "${RUTA}fm77av.zip" -P ../bios/
+echo
+echo "###### ACORN ARCHIMEDES ######"
+echo
+wget -c "${RUTA}aa310.zip" -P ../bios/
+wget -c "${RUTA}archimedes_keyboard.zip" -P ../bios/
+echo
+echo "###### ACORN ATOM ######"
+echo
+wget -c "${RUTA}atom.zip" -P ../bios/
+echo
+echo "###### ACCORN ELECTRON ######"
+echo
+wget -c "${RUTA}electron.zip" -P ../bios/
+wget -c "${RUTA}electron64.zip" -P ../bios/
+wget -c "${RUTA}electron_plus1.zip" -P ../bios/
+wget -c "${RUTA}electron_plus3.zip" -P ../bios/
+echo
+echo "###### APPLE II ######"
+echo
+wget -c "${RUTA}apple2e.zip" -P ../bios/
+wget -c "${RUTA}apple2ee.zip" -P ../bios/
+wget -c "${RUTA}apple2p.zip" -P ../bios/
+wget -c "${RUTA}a2diskiing.zip" -P ../bios/
+wget -c "${RUTA}a2cffa02.zip" -P ../bios/
+wget -c "${RUTA}votrsc01.zip" -P ../bios/
+wget -c "${RUTA}votrsc01a.zip" -P ../bios/
+wget -c "${RUTA}d2fdc.zip" -P ../bios/
+echo
+echo "###### APPLE II GS ######"
+echo
+wget -c "${RUTA}apple2gs.zip" -P ../bios/
+echo
+echo "###### CAMPUTERS LYNX ######"
+echo
+wget -c "${RUTA}lynx48k.zip" -P ../bios/
+wget -c "${RUTA}lynx96k.zip" -P ../bios/
+wget -c "${RUTA}lynx128k.zip" -P ../bios/
+echo
+echo "###### VIDEO GAME MUSIC PLAYER ######"
+echo
+wget -c "${RUTA}qsound.zip" -P ../bios/
+wget -c "${RUTA}ym2413.zip" -P ../bios/
+wget -c "${RUTA}ym2608.zip" -P ../bios/
+echo
+echo "###### EPOCH GAME POCKET COMPUTER ######"
+echo
+wget -c "${RUTA}gamepock.zip" -P ../bios/
+echo
+echo "###### TIGER GAME.COM ######"
+echo
+wget -c "${RUTA}gamecom.zip" -P ../bios/
+echo
+echo "###### ATARI XE GAME SYSTEM ######"
+echo
+wget -c "${RUTA}xegs.zip" -P ../bios/
+echo
+echo "###### VTECH CREATIVISION ######"
+echo
+wget -c "${RUTA}crvision.zip" -P ../bios/
+echo
+echo "###### VTECH V.SMILE ######"
+echo
+wget -c "${RUTA}vsmile.zip" -P ../bios/
+echo
+echo "###### VTECH SOCRATES ######"
+echo
+wget -c "${RUTA}socrates.zip" -P ../bios/
+echo
+echo "###### ENTEX ADVENTURE VISION ######"
+echo
+wget -c "${RUTA}advision.zip" -P ../bios/
+echo
+echo "###### BITCORP GAMATE ######"
+echo
+wget -c "${RUTA}gamate.zip" -P ../bios/
+echo
+echo "###### PHILLIPS CD-I ######"
+echo
+wget -c "${RUTA}cdimono1.zip" -P ../bios/
+echo
+echo "###### SEGA NAOMI 2 ######"
+echo
+wget -c "${RUTA}dc/naomi2.zip" -P ../bios/dc/
+echo
+echo "###### HIKARU ######"
+echo
+wget -c "${RUTA}hikaru.zip" -P ../bios/
+wget -c "${RUTA}mie.zip" -P ../bios/
+echo
+echo "###### PLAYSTATION VITA ######"
+echo
+wget -c "${RUTA_CUA}PSP2UPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_CUA}PSVUPDAT.PUP" -P ../bios/psvita/
+echo
+echo "###### GCE VECTREX ######"
+echo
+wget -c "${RUTA}vectrex.zip" -P ../bios/
+echo
+echo "###### SCUMMVM ######"
+echo
+wget -c "${RUTA}scummvm/extra/MT32_PCM.ROM" -P ../bios/scummvm/extra
+wget -c "${RUTA}scummvm/extra/MT32_CONTROL.ROM" -P ../bios/scummvm/extra
+echo
+echo "###### MICROSOFT MSX1/MSX2 ######"
+echo
+wget -c "${RUTA}openmsx/nms8250_disk.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/nms8250_basic-bios2.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/nms8250_msx2sub.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fmpac.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/phc-70fd2_basickun.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/yrw801.rom" -P ../bios/openmsx/
+echo
+echo "###### MICROSOFT MSX LASERDISC ######"
+echo
+wget -c "${RUTA}openmsx/px-7_pbasic.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/px-7_basic-bios1.rom" -P ../bios/openmsx/
+echo
+echo "###### MICROSOFT MSX2+ ######"
+echo
+wget -c "${RUTA}openmsx/fs-a1wsx_kanjifont.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_basic-bios2p.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_fmbasic.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_msx2psub.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_kanjibasic.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_disk.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1wsx_firmware.rom" -P ../bios/openmsx/
+echo "phc-70fd2_basickun.rom already downloaded"
+echo "yrw801.rom already downloaded"
+echo
+echo "###### MICROSOFT MSX-TURBO ######"
+echo
+wget -c "${RUTA}openmsx/fs-a1gt_firmware.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/fs-a1gt_kanjifont.rom" -P ../bios/openmsx/
+wget -c "${RUTA}openmsx/ide250.zip" -P ../bios/openmsx/
+echo "phc-70fd2_basickun.rom already downloaded"
+echo "yrw801.rom already downloaded"
+echo
+echo "###### SUPER A CAN ######"
+echo
+wget -c "${RUTA}supracan.zip" -P ../bios/
+echo
+echo "###### TANDY Video Information System MD-2500 ######"
+echo
+wget -c "${RUTA}vis.zip" -P ../bios/
+echo
+echo "###### NINTENDO GAMECUBE ######"
+echo
+wget -c "${RUTA}GC/EUR/IPL.bin" -P ../bios/GC/EUR/
+wget -c "${RUTA}GC/JAP/IPL.bin" -P ../bios/GC/JAP/
+wget -c "${RUTA}GC/USA/IPL.bin" -P ../bios/GC/USA/
+echo
+echo
+#wget -c "${RUTA}nb_48gc.zip" -P ../bios/
+#wget -c "${RUTA}votrax.zip" -P ../bios/
 echo
 sleep 1
 echo "Al fin, Copiadas todas las BIOS--Cool we finish"
 echo
-
-
 echo "Reinicia tu Raspberry Pi y Disfruta--Reboot and Enjoy"
 echo "Saludos desde Raspberry Pi Buenos Aires"
 echo
