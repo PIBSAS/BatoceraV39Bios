@@ -513,7 +513,7 @@ wget -c "${RUTA_ARCH}scph39001.bin" -P ../bios/
 echo
 echo "###### SONY PS3 ######"
 echo
-wget -c "${RUTA_ARCH}PS3UPDAT.PUP" -P ../bios/
+wget -c "${RUTA_CUA}PS3UPDAT.PUP" -P ../bios/
 echo
 echo "###### NINTENDO FAMILY DISK SYSTEM ######"
 echo
