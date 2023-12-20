@@ -34,10 +34,10 @@ mkdir ../bios/mame
 mkdir ../bios/mame/samples
 mkdir ../bios/openmsx
 mkdir ../bios/ps2
-mkdir ../bios/psvita
+#mkdir ../bios/psvita
 mkdir ../bios/scummvm/extra
 mkdir ../bios/xmil
-mkdir ../bios/wsh57
+#mkdir ../bios/wsh57
 cd
 echo
 rm ../bios/a2cffa02.zip
@@ -51,7 +51,7 @@ rm ../bios/kick37350.A600
 rm ../bios/vectrex.zip
 rm ../bios/Complex_4627.bin
 rm ../bios/EROM.BIN
-rm ../bios/PS3UPDAT.PUP
+#rm ../bios/PS3UPDAT.PUP
 rm ../bios/ROM2.BIN
 rm ../bios/SCPH30004R.MEC
 rm ../bios/SCPH30004R.bin
@@ -64,10 +64,10 @@ rm ../bios/mcpx_1.0.bin
 rm ../bios/rom1.bin
 rm ../bios/scph39001.MEC
 rm ../bios/scph39001.bin
-rm ../bios/wsh57/scripten.exe
+#rm ../bios/wsh57/scripten.exe
 rm ../bios/ps2/ps2-0230a-20080220.bin
-rm ../bios/psvita/PSP2UPDAT.PUP
-rm ../bios/psvita/PSVUPDAT.PUP
+#rm ../bios/psvita/PSP2UPDAT.PUP
+#rm ../bios/psvita/PSVUPDAT.PUP
 echo
 rm ../bios/5200.rom
 rm ../bios/a2diskiing.zip
