@@ -6,7 +6,7 @@ Las Bios Correctas y necesarias para Batocera V39 Butterfly, sin archivos innece
 The right Bios for Batocera V39 Butterfly, without unnecessary files.
 </p>
 <p align="center">
-<img src="https://raw.githubusercontent.com/Luciano2018/RetroPieBios/master/logov3.png" alt="Raspberry Pi Buenos Aires" width="400" height="500">
+<img src="https://raw.githubusercontent.com/PIBSAS/RetroPieBios/master/logov3.png" alt="Raspberry Pi Buenos Aires" width="400" height="500">
 </p>
 
 <h2 align="center"> Raspberry Pi 5 Bios Batocera V39 Butterfly</h2>
@@ -18,7 +18,7 @@ The right Bios for Batocera V39 Butterfly, without unnecessary files.
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi5-bios.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/pi5-bios.sh | bash
 ```
 
 ### Or Login through SSH -- O Nos conectamos por SSH:
@@ -32,7 +32,7 @@ Password: `linux`
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi5-bios.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/pi5-bios.sh | bash
 ```
 
 <h2 align="center"> Raspberry Pi Bios Batocera V39 Butterfly</h2>
@@ -44,7 +44,7 @@ curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi5
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi-bios.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/pi-bios.sh | bash
 ```
 
 ### Or Login through SSH -- O Nos conectamos por SSH:
@@ -58,7 +58,7 @@ Password: `linux`
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV39Bios/main/pi-bios.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/pi-bios.sh | bash
 ```
 
 <h2 align="center"> PC Bios Batocera V39 Butterfly</h2>
@@ -76,7 +76,7 @@ Password: `linux`
 Type:
 
 ```
-curl -sSL https://raw.githubusercontent.com/Luciano2018/BatoceraV38Bios/main/pc-bios.sh | bash
+curl -sSL https://raw.githubusercontent.com/PIBSAS/BatoceraV38Bios/main/pc-bios.sh | bash
 ```
 ### Enjoy!!! --- A disfrutar!!!
 
@@ -92,9 +92,9 @@ https://sites.google.com/view/raspberrypibuenosaires/joystick-arcade
 <h1 align="center"> Invite a Coffee</h1>
 <p align="center">
 <a href="https://www.paypal.com/paypalme/RaspberryPiBsAs">
-<img src="https://raw.githubusercontent.com/Luciano2018/MiPiTV/master/Paypal_2014_logo.png" alt="Invite a Coffee" width="40" height="50">
+<img src="https://raw.githubusercontent.com/PIBSAS/MiPiTV/master/Paypal_2014_logo.png" alt="Invite a Coffee" width="40" height="50">
 </a>
 <a href="https://link.mercadopago.com.ar/raspberrypibsas">
-<img src="https://raw.githubusercontent.com/Luciano2018/MiPiTV/master/MercadoPago.png" alt="Invite a Coffee" width="40" height="50">
+<img src="https://raw.githubusercontent.com/PIBSAS/MiPiTV/master/MercadoPago.png" alt="Invite a Coffee" width="40" height="50">
 </a>
 </p>
