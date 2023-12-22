@@ -68,6 +68,9 @@ rm ../bios/wsh57/scripten.exe
 rm ../bios/ps2/ps2-0230a-20080220.bin
 rm ../bios/psvita/PSP2UPDAT.PUP
 rm ../bios/psvita/PSVUPDAT.PUP
+rm ../bios/GC/EUR/IPL.bin
+rm ../bios/GC/JAP/IPL.bin
+rm ../bios/GC/USA/IPL.bin
 echo
 rm ../bios/5200.rom
 rm ../bios/a2diskiing.zip
