@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################################################
-# Repositorio: BatoceraV39Bios 2023
+# Repositorio: BatoceraV39Bios 2024
 # Por: Raspberry Pi Buenos Aires ("https://sites.google.com/view/raspberrypibuenosaires/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
@@ -15,8 +15,11 @@ echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si 
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 echo
 RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/bios/
-RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
-RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
+#RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
+RUTA_ARCH="https://archive.org/download/batocera-bios-v-29/Batocera%20BIOS%20V29%2B.zip/Batocera%20BIOS%20V29%2B%2FPS2/"
+RUTA_NDS="https://archive.org/download/nds-firmware-bios.-7z/NDS%20Firmware%20%26%20BIOs.7z/Bios%20%26%20Firmware/"
+#RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
+RUTA_TRI="https://github.com/BatoceraPLUS/Batocera.PLUS-UPDATE-bios/blob/main/bios/"
 RUTA_CUA=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/
 echo
 echo "Si el sistema es nuevo veras mensajes de que no puede borrar"
@@ -521,13 +524,13 @@ wget -c "${RUTA}disksys.rom" -P ../bios/
 echo
 echo "###### NINTENDO DS ######"
 echo
-wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
+wget -c "${RUTA_NDS}firmware.bin" -P ../bios/
 wget -c "${RUTA}bios7.bin" -P ../bios/
 wget -c "${RUTA}bios9.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_bios7.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
+wget -c "${RUTA_NDS}dsi_bios7.bin" -P ../bios/
+wget -c "${RUTA_NDS}dsi_bios9.bin" -P ../bios/
+wget -c "${RUTA_NDS}dsi_firmware.bin" -P ../bios/
+wget -c "${RUTA_NDS}dsi_nand.bin" -P ../bios/
 echo
 echo "###### NINTENDO GAMEBOY ADVANCE ######"
 echo
