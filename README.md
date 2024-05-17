@@ -1,4 +1,4 @@
-<h1 align="center"> Batocera V39 Butterfly Bios 2023</h1>
+<h1 align="center"> Batocera V39 Butterfly Bios 2024</h1>
 <p align="center">
 Las Bios Correctas y necesarias para Batocera V39 Butterfly, sin archivos innecesarios.
 </p>
