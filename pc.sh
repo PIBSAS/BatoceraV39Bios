@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################################################
-# Repositorio: BatoceraV39Bios 2023
+# Repositorio: BatoceraV39Bios 2024
 # Por: Raspberry Pi Buenos Aires ("https://sites.google.com/view/raspberrypibuenosaires/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
@@ -15,9 +15,10 @@ echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si 
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 echo
 RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/bios/
-RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
-RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
-RUTA_CUA=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/
+RUTA_LFS=https://media.githubusercontent.com/media/PIBSAS/BatoceraV39Bios/main/bios/
+#RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
+#RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
+#RUTA_CUA=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/
 echo
 echo "Si el sistema es nuevo veras mensajes de que no puede borrar"
 echo "You will see cannot remove if the system is new"
@@ -505,7 +506,7 @@ wget -c "${RUTA}scph7001.bin" -P ../bios/
 echo
 echo "###### SONY PS2 ######"
 echo
-wget -c "${RUTA}ps2/ps2-0230a-20080220.bin" -P ../bios/ps2/
+wget -c "${RUTA_LFS}ps2/ps2-0230a-20080220.bin" -P ../bios/ps2/
 #wget -c "${RUTA_ARCH}EROM.BIN" -P ../bios/
 #wget -c "${RUTA_ARCH}ROM2.BIN" -P ../bios/
 #wget -c "${RUTA_ARCH}SCPH30004R.MEC" -P ../bios/
@@ -516,7 +517,7 @@ wget -c "${RUTA}ps2/ps2-0230a-20080220.bin" -P ../bios/ps2/
 echo
 echo "###### SONY PS3 ######"
 echo
-wget -c "${RUTA_CUA}PS3UPDAT.PUP" -P ../bios/
+wget -c "${RUTA_LFS}PS3UPDAT.PUP" -P ../bios/
 echo
 echo "###### NINTENDO FAMILY DISK SYSTEM ######"
 echo
@@ -524,13 +525,13 @@ wget -c "${RUTA}disksys.rom" -P ../bios/
 echo
 echo "###### NINTENDO DS ######"
 echo
-wget -c "${RUTA_ARCH}firmware.bin" -P ../bios/
+wget -c "${RUTA_LFS}firmware.bin" -P ../bios/
 wget -c "${RUTA}bios7.bin" -P ../bios/
 wget -c "${RUTA}bios9.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_bios7.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_bios9.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_firmware.bin" -P ../bios/
-wget -c "${RUTA_ARCH}dsi_nand.bin" -P ../bios/
+wget -c "${RUTA_LFS}dsi_bios7.bin" -P ../bios/
+wget -c "${RUTA_LFS}dsi_bios9.bin" -P ../bios/
+wget -c "${RUTA_LFS}dsi_firmware.bin" -P ../bios/
+wget -c "${RUTA_LFS}dsi_nand.bin" -P ../bios/
 echo
 echo "###### NINTENDO GAMEBOY ADVANCE ######"
 echo
@@ -570,8 +571,8 @@ wget -c "${RUTA}MSX2PEXT.ROM" -P ../bios/
 echo
 echo "###### Microsoft XBOX ######"
 echo
-wget -c "${RUTA_ARCH}mcpx_1.0.bin" -P ../bios/
-wget -c "${RUTA_ARCH}Complex_4627.bin" -P ../bios/
+wget -c "${RUTA_LFS}mcpx_1.0.bin" -P ../bios/
+wget -c "${RUTA_LFS}Complex_4627.bin" -P ../bios/
 echo
 echo "###### COMMODORE AMIGA 500 ######"
 echo
@@ -663,7 +664,7 @@ wget -c "${RUTA}laser310.zip" -P ../bios/
 echo
 echo "###### FUTURE PINBALL ######"
 echo
-wget -c "${RUTA_ARCH}wsh57/scripten.exe" -P ../bios/wsh57/
+wget -c "${RUTA}wsh57/scripten.exe" -P ../bios/wsh57/
 echo
 echo "###### SUPER CASEETTE VISION ######"
 echo
@@ -711,7 +712,7 @@ wget -c "${RUTA}adbmodem.zip" -P ../bios/
 wget -c "${RUTA}macos3.img" -P ../bios/
 wget -c "${RUTA}macos608.img" -P ../bios/
 wget -c "${RUTA}macos701.img" -P ../bios/
-wget -c "${RUTA_TRI}macos75.img" -P ../bios/
+wget -c "${RUTA}macos75.img" -P ../bios/
 wget -c "${RUTA}mac608.chd" -P ../bios/
 wget -c "${RUTA}mac701.chd" -P ../bios/
 wget -c "${RUTA}mac755.chd" -P ../bios/
@@ -861,8 +862,8 @@ wget -c "${RUTA}mie.zip" -P ../bios/
 echo
 echo "###### PLAYSTATION VITA ######"
 echo
-wget -c "${RUTA_CUA}PSP2UPDAT.PUP" -P ../bios/psvita/
-wget -c "${RUTA_CUA}PSVUPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_LFS}PSP2UPDAT.PUP" -P ../bios/psvita/
+wget -c "${RUTA_LFS}PSVUPDAT.PUP" -P ../bios/psvita/
 echo
 echo "###### GCE VECTREX ######"
 echo
