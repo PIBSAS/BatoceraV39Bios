@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################################################################
-# Repositorio: BatoceraV39Bios 2023
+# Repositorio: BatoceraV39Bios 2024
 # Por: Raspberry Pi Buenos Aires ("https://sites.google.com/view/raspberrypibuenosaires/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
@@ -12,7 +12,7 @@ mount -o remount,rw /boot
 echo
 RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/bios/
 RUTA_ARCH=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V35%20BIOS%20Extra%20PC.zip/bios/
-RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
+#RUTA_TRI=https://archive.org/download/raspberry-pi-buenos-aires-batocera-v31-BIOS/Raspberry%20Pi%20Buenos%20Aires%20Batocera%20V33%20BIOS.zip/bios/
 echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si se te corto internet"
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
 cd
@@ -585,7 +585,7 @@ wget -c "${RUTA}adbmodem.zip" -P ../bios/
 wget -c "${RUTA}macos3.img" -P ../bios/
 wget -c "${RUTA}macos608.img" -P ../bios/
 wget -c "${RUTA}macos701.img" -P ../bios/
-wget -c "${RUTA_TRI}macos75.img" -P ../bios/
+wget -c "${RUTA_ARCH}macos75.img" -P ../bios/
 wget -c "${RUTA}mac608.chd" -P ../bios/
 wget -c "${RUTA}mac701.chd" -P ../bios/
 wget -c "${RUTA}mac755.chd" -P ../bios/
