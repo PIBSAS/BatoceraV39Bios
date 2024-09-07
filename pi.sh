@@ -10,7 +10,7 @@ echo "Getting Read and Write system"
 mount -o remount,rw /
 mount -o remount,rw /boot
 echo
-RUTA=https://raw.githubusercontent.com/PIBSAS/BatoceraV39Bios/main/bios/
+RUTA="https://archive.org/download/batov39/"
 RUTA_ARCH="https://archive.org/download/bios_batocera/BatoceraV39Bios/bios/"
 echo "Limpiando las bios basura que te descargaste de otro lado o las mismas si se te corto internet"
 echo "Cleaning the garbage bios downloaded from other sites or from this site but if you internet shutdown in the process"
