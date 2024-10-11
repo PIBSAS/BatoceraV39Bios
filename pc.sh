@@ -1,7 +1,7 @@
 #!/bin/bash
 ###########################################################################
 # Repositorio: BatoceraV39Bios 2024
-# Por: Raspberry Pi Buenos Aires ("https://sites.google.com/view/raspberrypibuenosaires/)
+# Por: Luciano's tech ("https://sites.google.com/view/lucianostech/)
 # License: http://creativecommons.org/licenses/by-sa/4.0/
 ###########################################################################
 cd
