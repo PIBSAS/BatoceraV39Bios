@@ -6,7 +6,7 @@ Las Bios Correctas y necesarias para Batocera V39 Butterfly, sin archivos innece
 The right Bios for Batocera V39 Butterfly, without unnecessary files.
 </p>
 <p align="center">
-<img src="https://raw.githubusercontent.com/PIBSAS/RetroPieBios/master/logov3.png" alt="Raspberry Pi Buenos Aires" width="400" height="500">
+<img src="https://raw.githubusercontent.com/PIBSAS/RetroPieBios/master/logov3.png" alt="Luciano's tech" width="400" height="500">
 </p>
 
 <h2 align="center"> Raspberry Pi 5 Bios Batocera V39 Butterfly</h2>
